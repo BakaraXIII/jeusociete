@@ -1,0 +1,16 @@
+[
+	{
+	  "typePatho": [
+		"Visuelle"
+	  ],
+	  "categorie": "Rébus",
+	  "Univers": "Années 80",
+	  "Enonce": "...",
+	  "images": [
+		"img/...",
+		"img/...2"
+	  ],
+	  "propositions": [],
+	  "reponse": "Hello World"
+	}
+]
