@@ -4,13 +4,59 @@
 		"Visuelle"
 	  ],
 	  "categorie": "Rébus",
-	  "Univers": "Années 80",
-	  "Enonce": "...",
+	  "Univers": "Moyen age",
+	  "Enonce": "Trouvez le mot grâce à ces images",
 	  "images": [
-		"img/...",
-		"img/...2"
+		"E:\\Git\\jeusociete\\src\\ressources\\images\\Rebus1\\chat.jpg",
+		"E:\\Git\\jeusociete\\src\\ressources\\images\\Rebus1\\eau.jpg"
 	  ],
+	  "propositions": ["animaleau" , "chatoneau", "chateau", "chataux"],
+	  "reponse": "chateau"
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Quizz historique",
+	  "Univers": "Renaissance",
+	  "Enonce": "Dans quelle région d'Italie est né Léonard de Vinci ?",
+	  "images": [],
+	  "propositions": ["Sicile", "Lombardie", "Latium", "Toscane"],
+	  "reponse": "Toscane"
+	},
+	
+	{
+	  "typePatho": [
+		"Visuelle", "Manuel"
+	  ],
+	  "categorie": "Pictionnary",
+	  "Univers": "Prehistoire",
+	  "Enonce": "Faite deviner le mot gourdin",
+	  "images": [],
 	  "propositions": [],
-	  "reponse": "Hello World"
+	  "reponse": ""
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Mathematique",
+	  "Univers": "Antiquite",
+	  "Enonce": "Quelle est la moitié de 2 plus 2 ?",
+	  "images": [],
+	  "propositions": ["3","2","4","1"],
+	  "reponse": "3 car la moitié de 2 = 1 + 2 = 3"
+	},
+	
+	{
+	  "typePatho": [
+		"Auditif"
+	  ],
+	  "categorie": "Blind test",
+	  "Univers": "Annee 80",
+	  "Enonce": "Qui est le chanteur ?",
+	  "images": [
+		"E:\\Git\\jeusociete\\src\\ressources\\musique\\test.mp3"
+	  ],
+	  "propositions": ["a","b","c","la réponse d"],
+	  "reponse": "la réponse d"
 	}
 ]

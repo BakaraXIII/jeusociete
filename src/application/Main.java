@@ -44,6 +44,7 @@ public class Main extends Application {
 	        System.out.println(st);
 	        
 	        JSONArray a = new JSONArray(st);
+	        Jeu.setEnigmes(a);
 	        br.close();
 		} catch(Exception e) {
 			e.printStackTrace();
