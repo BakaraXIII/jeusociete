@@ -19,7 +19,7 @@ public class MenuPrincController {
 		
 		Parent root;
 		try {
-			root = FXMLLoader.load(getClass().getResource("/ihm/MenuPath.fxml"));
+			root = FXMLLoader.load(getClass().getResource("/MenuPath.fxml"));
 			Scene scene = new Scene(root);
 		    
 	        theStage.setTitle("FXML Welcome");

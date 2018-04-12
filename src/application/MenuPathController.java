@@ -39,7 +39,7 @@ public class MenuPathController {
 		
 		Parent root;
 		try {
-			root = FXMLLoader.load(getClass().getResource("/ihm/MenuPrinc.fxml"));
+			root = FXMLLoader.load(getClass().getResource("/MenuPrinc.fxml"));
 			Scene scene = new Scene(root);
 		    
 	        theStage.setTitle("FXML Welcome");
@@ -88,7 +88,7 @@ public class MenuPathController {
 		
 		Parent root;
 		try {
-			root = FXMLLoader.load(getClass().getResource("/ihm/MenuNbJoueur.fxml"));
+			root = FXMLLoader.load(getClass().getResource("/MenuNbJoueur.fxml"));
 			Scene scene = new Scene(root);
 		    
 	        theStage.setTitle("FXML Welcome");

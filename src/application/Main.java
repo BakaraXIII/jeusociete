@@ -3,10 +3,15 @@ package application;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URI;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+
+import javax.print.DocFlavor.INPUT_STREAM;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -21,7 +26,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("/ihm/MenuPrinc.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/MenuPrinc.fxml"));
 		    
 	        Scene scene = new Scene(root);
 	    
@@ -29,9 +34,11 @@ public class Main extends Application {
 	        stage.setScene(scene);
 	        stage.show();
 	        
-	        File file = new File("E:\\Git\\jeusociete\\src\\ressources\\enigme.json"); //lecture du JSON changer le chemin avec celui de chez vou, j'ai mis l'absolu parce que le relatif ne marche pas
+	        URL url = getClass().getResource("./ressources/enigme.txt");
+	        InputStream is = Main.class.getResourceAsStream("/enigme.txt");
+	        //File file = new File(url.toString()); //lecture du JSON changer le chemin avec celui de chez vou, j'ai mis l'absolu parce que le relatif ne marche pas
 	        
-	        BufferedReader br = new BufferedReader(new FileReader(file));
+	        BufferedReader br = new BufferedReader(new InputStreamReader(is));
 	        
 	       String st = "";
 	       while (true) {
