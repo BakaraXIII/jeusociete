@@ -38,7 +38,8 @@ public class MenuUniversController{
 		btn2.setText(univers.get(1));
 		btn3.setText(univers.get(2));
 		btn4.setText(univers.get(3));
-		btn5.setText(univers.get(4));
+		if(Jeu.getNbUnivers() == 5)
+			btn5.setText(univers.get(4));
 	}
 	
 }

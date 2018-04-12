@@ -26,7 +26,7 @@
 	
 	{
 	  "typePatho": [
-		"Visuelle", "Manuel"
+		"Visuelle", "Manuelle"
 	  ],
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
@@ -48,7 +48,7 @@
 	
 	{
 	  "typePatho": [
-		"Auditif"
+		"Auditive"
 	  ],
 	  "categorie": "Blind test",
 	  "Univers": "Annee 80",
@@ -58,5 +58,27 @@
 	  ],
 	  "propositions": ["a","b","c","la réponse d"],
 	  "reponse": "la réponse d"
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Charade",
+	  "Univers": "Siecle des lumieres",
+	  "Enonce": "Mon premier est un adjectif possessif (2ème personne du pluriel) Mon deuxième est le son de la lettre \"L\" Les paysans cultivent mon troisième Mon tout est un philosophe.",
+	  "images": [],
+	  "propositions": ["Voltaire","Rousseau","Socrate","Descartes"],
+	  "reponse": "Voltaire"
+	},
+	
+	{
+	  "typePatho": [
+		"Visuelle", "Manuelle"
+	  ],
+	  "categorie": "Mime",
+	  "Univers": "Temps moderne",
+	  "Enonce": "Mimez le fait de conduire",
+	  "images": [],
+	  "propositions": [],
+	  "reponse": ""
 	}
 ]

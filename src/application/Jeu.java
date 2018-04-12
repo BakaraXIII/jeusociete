@@ -16,6 +16,7 @@ public class Jeu {
 		add("Prehistoire");
 		add("Antiquite");
 		add("Blind tests");
+		add("Temps Modernes");
 	}};
 	private static JSONArray enigmes = null;
 	
@@ -60,6 +61,10 @@ public class Jeu {
 	}
 	public static ArrayList<String> getUnivers() {
 		return univers;
+	}
+
+	public static void setUnivers(ArrayList<String> univers) {
+		Jeu.univers = univers;
 	}
 
 	public static JSONArray getEnigmes() {

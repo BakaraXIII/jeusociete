@@ -44,18 +44,18 @@
                   <Insets right="100.0" />
                </GridPane.margin>
             </Button>
-            <CheckBox mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Visuel" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <CheckBox fx:id="path1" mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Visuel" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="36.0" />
                </font>
             </CheckBox>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <CheckBox mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Auditif" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <CheckBox fx:id="path2" mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Auditif" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font>
             </CheckBox>
-            <CheckBox mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Manuel" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <CheckBox fx:id="path3" mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Manuel" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font>
