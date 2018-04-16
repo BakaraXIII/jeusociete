@@ -29,13 +29,13 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <Label text="Sélectionnez l'univers correspondant" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Sélectionnez l'univers correspondant" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Button fx:id="btn1" mnemonicParsing="false" text="Préhistoire" GridPane.rowIndex="2">
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#enigme" text="Préhistoire" GridPane.rowIndex="2">
                <font>
                   <Font size="36.0" />
                </font>
@@ -43,7 +43,7 @@
                   <Insets left="30.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="btn2" mnemonicParsing="false" text="Antiquité" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#enigme" text="Antiquité" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                <font>
                   <Font size="36.0" />
                </font>
@@ -51,7 +51,7 @@
                   <Insets right="30.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="btn4" mnemonicParsing="false" text="Année 80" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#enigme" text="Année 80" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                <font>
                   <Font size="36.0" />
                </font>
@@ -59,12 +59,12 @@
                   <Insets right="30.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="btn5" mnemonicParsing="false" text="Moyen age" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#enigme" text="Moyen age" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                <font>
                   <Font size="36.0" />
                </font>
             </Button>
-            <Button fx:id="btn3" mnemonicParsing="false" text="Rennaissance" GridPane.rowIndex="3">
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#enigme" text="Rennaissance" GridPane.rowIndex="3">
                <font>
                   <Font size="36.0" />
                </font>

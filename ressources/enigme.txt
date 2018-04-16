@@ -7,8 +7,8 @@
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
 	  "images": [
-		"E:\\Git\\jeusociete\\src\\ressources\\images\\Rebus1\\chat.jpg",
-		"E:\\Git\\jeusociete\\src\\ressources\\images\\Rebus1\\eau.jpg"
+		"chat.jpg",
+		"eau.jpg"
 	  ],
 	  "propositions": ["animaleau" , "chatoneau", "chateau", "chataux"],
 	  "reponse": "chateau"
@@ -54,7 +54,7 @@
 	  "Univers": "Annee 80",
 	  "Enonce": "Qui est le chanteur ?",
 	  "images": [
-		"E:\\Git\\jeusociete\\src\\ressources\\musique\\test.mp3"
+		
 	  ],
 	  "propositions": ["a","b","c","la réponse d"],
 	  "reponse": "la réponse d"
