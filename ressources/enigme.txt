@@ -43,7 +43,7 @@
 	  "Enonce": "Quelle est la moitié de 2 plus 2 ?",
 	  "images": [],
 	  "propositions": ["3","2","4","1"],
-	  "reponse": "3 car la moitié de 2 = 1 + 2 = 3"
+	  "reponse": "3"
 	},
 	
 	{

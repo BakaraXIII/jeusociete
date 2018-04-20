@@ -35,7 +35,7 @@ public class MenuUniversController{
 	
 	public void enigme(ActionEvent e) {
 		Node bouton_raw = (Node) e.getSource();
-		Stage theStage = (Stage) bouton_raw.getScene().getWindow(); //garder même fenêtre
+		Stage theStage = (Stage) bouton_raw.getScene().getWindow(); //garder mï¿½me fenï¿½tre
 		Button bouton = (Button) bouton_raw;
 		String en_raw = bouton.getText();
 		
@@ -56,7 +56,7 @@ public class MenuUniversController{
 			
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/Enigme.fxml"));
 			root = loader.load();
-			EnigmeController controller = loader.<EnigmeController>getController(); //Recupère controller fenetre suivante
+			EnigmeController controller = loader.<EnigmeController>getController(); //Recupï¿½re controller fenetre suivante
 			
 			controller.displayEnigme(enigmeCourante);
 			
@@ -71,6 +71,23 @@ public class MenuUniversController{
 		}
 	}
 	
+	public void generateUnivers() {
+	    System.out.println("GÃ©nÃ©ration univers !");
+	    List<String> univers = Jeu.getUnivers();
+        Collections.shuffle(univers);
+        affectationUnivers(univers);
+        
+	}
+	
+	private void affectationUnivers(List<String> univers) {
+	    btn1.setText(univers.get(0));
+        btn2.setText(univers.get(1));
+        btn3.setText(univers.get(2));
+        btn4.setText(univers.get(3));
+        if(Jeu.getNbUnivers() == 5)
+            btn5.setText(univers.get(4));
+	}
+	
 	@FXML
 	protected void initialize() {
 		System.out.println(Jeu.getNbUnivers());
@@ -80,13 +97,7 @@ public class MenuUniversController{
 			btn5.setVisible(true);
 		}
 		List<String> univers = Jeu.getUnivers();
-		Collections.shuffle(univers);
-		btn1.setText(univers.get(0));
-		btn2.setText(univers.get(1));
-		btn3.setText(univers.get(2));
-		btn4.setText(univers.get(3));
-		if(Jeu.getNbUnivers() == 5)
-			btn5.setText(univers.get(4));
+		affectationUnivers(univers);
 	}
 	
 }

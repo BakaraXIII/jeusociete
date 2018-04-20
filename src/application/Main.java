@@ -29,6 +29,8 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("/MenuPrinc.fxml"));
 		    
 	        Scene scene = new Scene(root);
+	        
+	        scene.getStylesheets().add(getClass().getResource("/application.css").toExternalForm());
 	    
 	        stage.setTitle("FXML Welcome");
 	        stage.setScene(scene);

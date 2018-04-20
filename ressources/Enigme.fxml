@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EnigmeController">
+<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EnigmeController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -38,7 +38,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button fx:id="eTrouve" mnemonicParsing="false" prefHeight="120.0" prefWidth="256.0" text="Trouvé" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <Button fx:id="eTrouve" mnemonicParsing="false" onAction="#retour" prefHeight="120.0" prefWidth="256.0" text="Trouvé" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                <font>
                   <Font size="48.0" />
                </font>
@@ -67,22 +67,22 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="eProposition1" mnemonicParsing="false" prefHeight="108.0" prefWidth="218.0" text="6">
+                  <Button fx:id="eProposition1" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6">
                      <font>
                         <Font size="48.0" />
                      </font>
                   </Button>
-                  <Button fx:id="eProposition2" mnemonicParsing="false" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.columnIndex="1">
+                  <Button fx:id="eProposition2" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.columnIndex="1">
                      <font>
                         <Font size="48.0" />
                      </font>
                   </Button>
-                  <Button fx:id="eProposition3" mnemonicParsing="false" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.rowIndex="1">
+                  <Button fx:id="eProposition3" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.rowIndex="1">
                      <font>
                         <Font size="48.0" />
                      </font>
                   </Button>
-                  <Button fx:id="eProposition4" mnemonicParsing="false" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button fx:id="eProposition4" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font size="48.0" />
                      </font>
@@ -94,6 +94,11 @@
                   <Font size="36.0" />
                </font>
             </Label>
+            <Button fx:id="eRetour" mnemonicParsing="false" onAction="#retour" prefHeight="100.0" prefWidth="112.0" text="Retour" GridPane.rowIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
          </children>
       </GridPane>
    </children>

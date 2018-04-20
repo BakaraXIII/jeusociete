@@ -16,7 +16,7 @@ public class MenuNbJoueurController {
 		System.out.println("retour");
 		
 		Node bouton = (Node) e.getSource();
-		Stage theStage = (Stage) bouton.getScene().getWindow(); //garder même fenêtre
+		Stage theStage = (Stage) bouton.getScene().getWindow(); //garder mï¿½me fenï¿½tre
 		
 		Parent root;
 		try {
@@ -37,7 +37,7 @@ public class MenuNbJoueurController {
 	public void nombre(ActionEvent e) {
 		
 		Node bouton_raw = (Node) e.getSource();
-		Stage theStage = (Stage) bouton_raw.getScene().getWindow(); //garder même fenêtre
+		Stage theStage = (Stage) bouton_raw.getScene().getWindow(); //garder mï¿½me fenï¿½tre
 		Button bouton = (Button) bouton_raw;
 		String nb_raw = bouton.getText();
 		int nb_joueurs = Integer.parseInt(nb_raw);
@@ -45,8 +45,12 @@ public class MenuNbJoueurController {
 		
 		Parent root;
 		try {
-			root = FXMLLoader.load(getClass().getResource("/MenuUnivers.fxml"));
+		    FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuUnivers.fxml"));
+            root = loader.load();
+            MenuUniversController controller = loader.<MenuUniversController>getController(); //Recupï¿½re controller fenetre suivante
 			
+            controller.generateUnivers();
+            
 			Scene scene = new Scene(root);
 		    
 	        theStage.setTitle("FXML Welcome");

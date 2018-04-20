@@ -1,14 +1,21 @@
 package application;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import org.json.JSONObject;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 public class EnigmeController {
 	
@@ -51,6 +58,9 @@ public class EnigmeController {
 	@FXML
 	public Button eTrouve;
 	
+	@FXML
+	public Button eRetour;
+	
 	public void displayEnigme(JSONObject enigme) {		
 		eUnivers.setText(enigme.getString("Univers"));	
 		eEnonce.setText(enigme.getString("Enonce"));
@@ -86,15 +96,49 @@ public class EnigmeController {
 			eTrouve.setVisible(false);
 				
 		} else {
-			btns.forEach(i -> {
-				i.setVisible(false);
-			});
-			eSolution.setVisible(false);
+			btns.forEach(i -> i.setVisible(false));
 		}
 		
 		eSolution.setText(enigme.getString("reponse"));
 		
-		
+		eSolution.setVisible(false);
 		
 	}
+	
+	public void checkSolution(ActionEvent e) {
+	    Node bouton_raw = (Node) e.getSource();
+        Stage theStage = (Stage) bouton_raw.getScene().getWindow(); //garder m�me fen�tre
+        Button bouton = (Button) bouton_raw;
+        String proposition = bouton.getText();
+        
+        if(eSolution.getText().equals(proposition)) {
+            // TODO: Faire une système de coloration du bouton en fonction de la réponse
+            //bouton.getStyleClass().add("addBobOk");
+            eSolution.setText("TROUVE\n" + eSolution.getText());
+        }
+        eSolution.setVisible(true);
+	}
+	
+	public void retour(ActionEvent e) {
+	    Parent root;
+        try {
+            //root = FXMLLoader.load(getClass().getResource("/Enigme.fxml"));
+            
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuUnivers.fxml"));
+            root = loader.load();
+            //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+            
+            Scene scene = new Scene(root);
+            
+            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+            
+            theStage.setTitle("FXML Welcome");
+            theStage.setScene(scene);
+            theStage.show();
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+	}
+	
 }
