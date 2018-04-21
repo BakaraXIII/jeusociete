@@ -15,6 +15,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 
 public class EnigmeController {
@@ -39,6 +42,9 @@ public class EnigmeController {
 	
 	@FXML
 	public ImageView eImage5;
+	
+	@FXML
+	public MediaView eMedia;
 	
 	@FXML
 	public Button eProposition1;
@@ -81,6 +87,13 @@ public class EnigmeController {
 			images.forEach(i -> {
 				i.setVisible(false);
 			});
+		}
+		
+		if(enigme.getString("Media").length() != 0) {
+			Media m = new Media(getClass().getResource("/"+enigme.getString("Media")).toString());
+			MediaPlayer mp = new MediaPlayer(m);
+			mp.setAutoPlay(true);
+			eMedia.setMediaPlayer(mp);
 		}
 		
 		ArrayList<Button> btns = new ArrayList<>();

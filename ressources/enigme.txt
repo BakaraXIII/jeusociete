@@ -10,6 +10,7 @@
 		"chat.jpg",
 		"eau.jpg"
 	  ],
+	  "Media" : "",
 	  "propositions": ["animaleau" , "chatoneau", "chateau", "chataux"],
 	  "reponse": "chateau"
 	},
@@ -20,6 +21,7 @@
 	  "Univers": "Renaissance",
 	  "Enonce": "Dans quelle région d'Italie est né Léonard de Vinci ?",
 	  "images": [],
+	  "Media" : "",
 	  "propositions": ["Sicile", "Lombardie", "Latium", "Toscane"],
 	  "reponse": "Toscane"
 	},
@@ -32,6 +34,7 @@
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faite deviner le mot gourdin",
 	  "images": [],
+	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
 	},
@@ -42,6 +45,7 @@
 	  "Univers": "Antiquite",
 	  "Enonce": "Quelle est la moitié de 2 plus 2 ?",
 	  "images": [],
+	  "Media" : "",
 	  "propositions": ["3","2","4","1"],
 	  "reponse": "3"
 	},
@@ -53,9 +57,8 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annee 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [
-		
-	  ],
+	  "images": [],
+	  "Media" : "test.mp3",
 	  "propositions": ["a","b","c","la réponse d"],
 	  "reponse": "la réponse d"
 	},
@@ -66,6 +69,7 @@
 	  "Univers": "Siecle des lumieres",
 	  "Enonce": "Mon premier est un adjectif possessif (2ème personne du pluriel) Mon deuxième est le son de la lettre \"L\" Les paysans cultivent mon troisième Mon tout est un philosophe.",
 	  "images": [],
+	  "Media" : "",
 	  "propositions": ["Voltaire","Rousseau","Socrate","Descartes"],
 	  "reponse": "Voltaire"
 	},
@@ -78,6 +82,7 @@
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez le fait de conduire",
 	  "images": [],
+	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
 	}
