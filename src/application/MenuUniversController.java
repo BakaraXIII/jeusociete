@@ -14,6 +14,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class MenuUniversController{
@@ -32,6 +33,9 @@ public class MenuUniversController{
 	
 	@FXML
 	public Button btn5;
+	
+	@FXML
+	public Label eNbEssais;
 	
 	public void enigme(ActionEvent e) {
 		Node bouton_raw = (Node) e.getSource();
@@ -73,19 +77,24 @@ public class MenuUniversController{
 	
 	public void generateUnivers() {
 	    System.out.println("Génération univers !");
-	    List<String> univers = Jeu.getUnivers();
+	    ArrayList<String> univers = Jeu.getUnivers();
         Collections.shuffle(univers);
         affectationUnivers(univers);
         
 	}
 	
-	private void affectationUnivers(List<String> univers) {
-	    btn1.setText(univers.get(0));
-        btn2.setText(univers.get(1));
-        btn3.setText(univers.get(2));
-        btn4.setText(univers.get(3));
-        if(Jeu.getNbUnivers() == 5)
-            btn5.setText(univers.get(4));
+	private void affectationUnivers(ArrayList<String> univers) {
+		Jeu.setUnivers(univers);
+	   btn1.setText(univers.get(0));
+       btn2.setText(univers.get(1));
+       btn3.setText(univers.get(2));
+       btn4.setText(univers.get(3));
+       if(Jeu.getNbUnivers() == 5) {
+           btn5.setText(univers.get(4));
+           Jeu.setUnivers(new ArrayList<>(Jeu.getUnivers().subList(0, 5)));
+       }else {
+    	   Jeu.setUnivers(new ArrayList<>(Jeu.getUnivers().subList(0, 4)));
+       }
 	}
 	
 	@FXML
@@ -96,8 +105,9 @@ public class MenuUniversController{
 		}else {
 			btn5.setVisible(true);
 		}
-		List<String> univers = Jeu.getUnivers();
+		ArrayList<String> univers = Jeu.getUnivers();
 		affectationUnivers(univers);
+		eNbEssais.setText(Integer.toString(Jeu.getnbEssais()));
 	}
 	
 }

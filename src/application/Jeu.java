@@ -39,7 +39,7 @@ public class Jeu {
 		}
 		
 		if(nbJoueur == 2) {
-			nbItem = 8;
+			nbItem = 2;
 			nbEssais = 3;
 		}else if(nbJoueur == 3) {
 			nbItem = 8;
@@ -53,6 +53,11 @@ public class Jeu {
 	public static int getNbItem() {
 		return nbItem;
 	}
+	
+	public static void setNbItem(int nbItem) {
+		Jeu.nbItem = nbItem;
+	}
+
 	public static int getNbFigurine() {
 		return nbFigurine;
 	}

@@ -12,7 +12,7 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EnigmeController">
+<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Enigme2Controller">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -39,7 +39,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button fx:id="eTrouve" mnemonicParsing="false" onAction="#retour" prefHeight="120.0" prefWidth="256.0" text="Trouvé" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <Button fx:id="eTrouve" mnemonicParsing="false" onAction="#suivant" prefHeight="120.0" prefWidth="256.0" text="Trouvé" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                <font>
                   <Font size="48.0" />
                </font>
@@ -96,30 +96,14 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <Button fx:id="eRetour" mnemonicParsing="false" onAction="#retour" prefHeight="100.0" prefWidth="112.0" text="Retour" GridPane.rowIndex="4">
+            <Button fx:id="eSuivant" mnemonicParsing="false" onAction="#suivant" prefHeight="100.0" prefWidth="112.0" text="Suivant" GridPane.rowIndex="4">
                <font>
                   <Font size="19.0" />
                </font>
             </Button>
-            <Label alignment="TOP_RIGHT" contentDisplay="CENTER" text="Nombre essais : " GridPane.halignment="RIGHT" GridPane.valignment="TOP">
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <GridPane.margin>
-                  <Insets right="40.0" top="20.0" />
-               </GridPane.margin>
-            </Label>
-            <Label fx:id="eNbEssais" text="n" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
-               <GridPane.margin>
-                  <Insets right="20.0" top="20.0" />
-               </GridPane.margin>
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
             <Button fx:id="eAbandon" mnemonicParsing="false" onAction="#abandon" prefHeight="100.0" prefWidth="110.0" text="Abandon" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                <font>
-                  <Font size="19.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
          </children>

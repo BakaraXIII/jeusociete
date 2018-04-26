@@ -67,6 +67,12 @@ public class EnigmeController {
 	@FXML
 	public Button eRetour;
 	
+	@FXML
+	public Label eNbEssais;
+	
+	@FXML
+	public Button eAbandon;
+	
 	public void displayEnigme(JSONObject enigme) {		
 		eUnivers.setText(enigme.getString("Univers"));	
 		eEnonce.setText(enigme.getString("Enonce"));
@@ -107,7 +113,7 @@ public class EnigmeController {
 				btn.setText(enigme.getJSONArray("propositions").getString(i));
 			}
 			eTrouve.setVisible(false);
-				
+			eAbandon.setVisible(false);	
 		} else {
 			btns.forEach(i -> i.setVisible(false));
 		}
@@ -116,6 +122,9 @@ public class EnigmeController {
 		
 		eSolution.setVisible(false);
 		eRetour.setVisible(false);
+		
+		// Affiche le nombre d'essais
+		eNbEssais.setText(Integer.toString(Jeu.getnbEssais()));
 		
 	}
 	
@@ -129,8 +138,10 @@ public class EnigmeController {
             // TODO: Faire une système de coloration du bouton en fonction de la réponse
             //bouton.getStyleClass().add("addBobOk");
             eSolution.setText("TROUVE !\n" + eSolution.getText());
+            Jeu.setNbItem(Jeu.getNbItem()-1);
         } else {
         	eSolution.setText("PERDU !\n" + eSolution.getText());
+        	Jeu.setNbEssais(Jeu.getnbEssais()-1);
         }
         eSolution.setVisible(true);
         
@@ -144,21 +155,86 @@ public class EnigmeController {
         eRetour.setVisible(true);
 	}
 	
+	public void abandon(ActionEvent e) {
+	    Parent root;
+	    Jeu.setNbEssais(Jeu.getnbEssais()-1);
+	    try {
+            //root = FXMLLoader.load(getClass().getResource("/Enigme.fxml"));
+            if(Integer.parseInt(eNbEssais.getText()) < 1){
+            	FXMLLoader loader = new FXMLLoader(getClass().getResource("/Perdu.fxml"));
+                root = loader.load();
+                //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+                
+                Scene scene = new Scene(root);
+                
+                Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+                
+                theStage.setTitle("FXML Welcome");
+                theStage.setScene(scene);
+                theStage.show();          
+        	}else {
+	        	FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuUnivers.fxml"));
+	            root = loader.load();
+	            //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+	            
+	            Scene scene = new Scene(root);
+	            
+	            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+	            
+	            theStage.setTitle("FXML Welcome");
+	            theStage.setScene(scene);
+	            theStage.show();
+            }
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+	
+	}
+	
 	public void retour(ActionEvent e) {
 	    Parent root;
         try {
             //root = FXMLLoader.load(getClass().getResource("/Enigme.fxml"));
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuUnivers.fxml"));
-            root = loader.load();
-            //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+            if(Integer.parseInt(eNbEssais.getText()) < 1){
+            	FXMLLoader loader = new FXMLLoader(getClass().getResource("/Perdu.fxml"));
+                root = loader.load();
+                //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+                
+                Scene scene = new Scene(root);
+                
+                Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+                
+                theStage.setTitle("FXML Welcome");
+                theStage.setScene(scene);
+                theStage.show();
             
-            Scene scene = new Scene(root);
+            }else if(Jeu.getNbItem() == 0){
+            	FXMLLoader loader = new FXMLLoader(getClass().getResource("/Transition.fxml"));
+	            root = loader.load();
+	            //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+	            
+	            Scene scene = new Scene(root);
+	            
+	            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+	            
+	            theStage.setTitle("FXML Welcome");
+	            theStage.setScene(scene);
+	            theStage.show();
             
-            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-            
-            theStage.setTitle("FXML Welcome");
-            theStage.setScene(scene);
-            theStage.show();
+        	}else {
+	        	FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuUnivers.fxml"));
+	            root = loader.load();
+	            //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+	            
+	            Scene scene = new Scene(root);
+	            
+	            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+	            
+	            theStage.setTitle("FXML Welcome");
+	            theStage.setScene(scene);
+	            theStage.show();
+            }
         } catch (IOException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
