@@ -115,6 +115,7 @@ public class EnigmeController {
 		eSolution.setText(enigme.getString("reponse"));
 		
 		eSolution.setVisible(false);
+		eRetour.setVisible(false);
 		
 	}
 	
@@ -127,16 +128,26 @@ public class EnigmeController {
         if(eSolution.getText().equals(proposition)) {
             // TODO: Faire une système de coloration du bouton en fonction de la réponse
             //bouton.getStyleClass().add("addBobOk");
-            eSolution.setText("TROUVE\n" + eSolution.getText());
+            eSolution.setText("TROUVE !\n" + eSolution.getText());
+        } else {
+        	eSolution.setText("PERDU !\n" + eSolution.getText());
         }
         eSolution.setVisible(true);
+        
+        eProposition1.setDisable(true);
+        eProposition2.setDisable(true);
+        eProposition3.setDisable(true);
+        eProposition4.setDisable(true);
+        if(eMedia.getMediaPlayer() != null) {
+        	eMedia.getMediaPlayer().stop();
+        }
+        eRetour.setVisible(true);
 	}
 	
 	public void retour(ActionEvent e) {
 	    Parent root;
         try {
             //root = FXMLLoader.load(getClass().getResource("/Enigme.fxml"));
-            
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuUnivers.fxml"));
             root = loader.load();
             //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante

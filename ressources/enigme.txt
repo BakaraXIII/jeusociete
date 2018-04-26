@@ -55,7 +55,7 @@
 		"Auditive"
 	  ],
 	  "categorie": "Blind test",
-	  "Univers": "Annee 80",
+	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
 	  "images": [],
 	  "Media" : "test.mp3",

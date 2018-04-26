@@ -15,10 +15,11 @@ public class Jeu {
 		add("Renaissance");
 		add("Prehistoire");
 		add("Antiquite");
-		add("Blind tests");
+		add("Annees 80");
 		add("Temps Modernes");
 	}};
 	private static JSONArray enigmes = null;
+	private static int nbEssais = 0;
 	
 	
 	public static int getNbJoueur() {
@@ -31,22 +32,21 @@ public class Jeu {
 		
 		if(nbJoueur <= 3) {
 			nbFigurine = 1;
-		}else {
-			nbFigurine = 2;
-		}
-		
-		if(nbJoueur <= 3) {
 			nbUnivers = 4;
 		}else {
+			nbFigurine = 2;
 			nbUnivers = 5;
 		}
 		
 		if(nbJoueur == 2) {
-			nbItem	 = 4;
+			nbItem = 8;
+			nbEssais = 3;
 		}else if(nbJoueur == 3) {
-			nbItem = 5;
+			nbItem = 8;
+			nbEssais = 2;
 		}else {
-			nbItem = 6;
+			nbItem = 12;
+			nbEssais = 4;
 		}
 	}
 	
@@ -73,6 +73,14 @@ public class Jeu {
 
 	public static void setEnigmes(JSONArray enigmes) {
 		Jeu.enigmes = enigmes;
+	}
+
+	public static int getnbEssais() {
+		return nbEssais;
+	}
+
+	public static void setNbEssais(int nbEssais) {
+		Jeu.nbEssais = nbEssais;
 	}
 	
 	
