@@ -39,7 +39,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button fx:id="eTrouve" mnemonicParsing="false" onAction="#retour" prefHeight="120.0" prefWidth="256.0" text="Trouvé" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <Button fx:id="eTrouve" mnemonicParsing="false" onAction="#trouve" prefHeight="120.0" prefWidth="256.0" text="Trouvé" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                <font>
                   <Font size="48.0" />
                </font>
@@ -53,10 +53,10 @@
                <children>
                   <ImageView fx:id="eImage1" fitHeight="101.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fx:id="eImage2" fitHeight="101.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true" />
-                  <MediaView fx:id="eMedia" fitHeight="100.0" fitWidth="100.0" />
                   <ImageView fx:id="eImage3" fitHeight="101.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fx:id="eImage4" fitHeight="101.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fx:id="eImage5" fitHeight="101.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true" />
+                  <MediaView fx:id="eMedia" fitHeight="100.0" fitWidth="100.0" />
                </children>
             </HBox>
             <GridPane GridPane.rowIndex="3">

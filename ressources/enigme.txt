@@ -11,8 +11,25 @@
 		"eau.jpg"
 	  ],
 	  "Media" : "",
-	  "propositions": ["animaleau" , "chatoneau", "chateau", "chataux"],
+	  "propositions": [],
 	  "reponse": "chateau"
+	},
+	
+	{
+	  "typePatho": [
+		"Visuelle"
+	  ],
+	  "categorie": "Rébus",
+	  "Univers": "Moyen age",
+	  "Enonce": "Trouvez le mot grâce à ces images",
+	  "images": [
+		"ce.jpg",
+		"nid.jpg",
+		"heure.jpg"
+	  ],
+	  "Media" : "",
+	  "propositions": [],
+	  "reponse": "seigneur"
 	},
 	
 	{

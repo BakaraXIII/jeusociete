@@ -68,6 +68,9 @@ public class Enigme2Controller {
 
 	@FXML
 	public Button eSuivant;
+	
+	@FXML
+	public Button eAbandon;
 
 	public void displayEnigme(JSONObject enigme) {
 		eUnivers.setText(enigme.getString("Univers"));
@@ -108,6 +111,7 @@ public class Enigme2Controller {
 				Button btn = btns.get(i);
 				btn.setText(enigme.getJSONArray("propositions").getString(i));
 			}
+			eAbandon.setVisible(false);
 			eTrouve.setVisible(false);
 
 		} else {

@@ -192,6 +192,11 @@ public class EnigmeController {
 	
 	}
 	
+	public void trouve(ActionEvent e) {
+		Jeu.setNbItem(Jeu.getNbItem()-1);
+		retour(e);
+	}
+	
 	public void retour(ActionEvent e) {
 	    Parent root;
         try {
