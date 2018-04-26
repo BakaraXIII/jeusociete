@@ -20,9 +20,9 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="274.0" minHeight="10.0" prefHeight="154.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="341.0" minHeight="10.0" prefHeight="211.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="214.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="274.0" minHeight="6.0" prefHeight="13.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="341.0" minHeight="10.0" prefHeight="177.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="189.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
@@ -34,7 +34,7 @@
                   <Insets left="20.0" top="20.0" />
                </GridPane.margin>
             </Label>
-            <Label fx:id="eEnonce" text="Faite deviner par le dessin le mot &quot;gourdin&quot; " GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label fx:id="eEnonce" alignment="TOP_CENTER" prefHeight="287.0" prefWidth="749.0" text="Faite deviner par le dessin le mot &quot;gourdin&quot; " wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
                   <Font size="24.0" />
                </font>
@@ -48,6 +48,9 @@
                <font>
                   <Font size="36.0" />
                </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
             </Label>
             <HBox prefHeight="200.0" prefWidth="0.0" GridPane.rowIndex="2">
                <children>
@@ -69,24 +72,24 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="eProposition1" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6">
+                  <Button fx:id="eProposition1" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="378.0" text="6">
                      <font>
-                        <Font size="48.0" />
+                        <Font size="28.0" />
                      </font>
                   </Button>
-                  <Button fx:id="eProposition2" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.columnIndex="1">
+                  <Button fx:id="eProposition2" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="332.0" text="6" GridPane.columnIndex="1">
                      <font>
-                        <Font size="48.0" />
+                        <Font size="28.0" />
                      </font>
                   </Button>
-                  <Button fx:id="eProposition3" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.rowIndex="1">
+                  <Button fx:id="eProposition3" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="418.0" text="6" GridPane.rowIndex="1">
                      <font>
-                        <Font size="48.0" />
+                        <Font size="28.0" />
                      </font>
                   </Button>
-                  <Button fx:id="eProposition4" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="218.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button fx:id="eProposition4" mnemonicParsing="false" onAction="#checkSolution" prefHeight="108.0" prefWidth="328.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
-                        <Font size="48.0" />
+                        <Font size="28.0" />
                      </font>
                   </Button>
                </children>

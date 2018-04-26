@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -73,6 +74,9 @@ public class EnigmeController {
 	@FXML
 	public Button eAbandon;
 	
+	@FXML
+	public GridPane eGrid;
+	
 	public void displayEnigme(JSONObject enigme) {		
 		eUnivers.setText(enigme.getString("Univers"));	
 		eEnonce.setText(enigme.getString("Enonce"));
@@ -100,6 +104,10 @@ public class EnigmeController {
 			MediaPlayer mp = new MediaPlayer(m);
 			mp.setAutoPlay(true);
 			eMedia.setMediaPlayer(mp);
+		}
+		
+		if(enigme.getJSONArray("images").length() == 0 && enigme.getString("Media").length() == 0) {
+			eGrid.getRowConstraints().get(2).setMaxHeight(0);
 		}
 		
 		ArrayList<Button> btns = new ArrayList<>();

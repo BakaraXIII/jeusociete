@@ -17,6 +17,7 @@ public class Jeu {
 		add("Antiquite");
 		add("Annees 80");
 		add("Temps Modernes");
+		add("Siecle des lumieres");
 	}};
 	private static JSONArray enigmes = null;
 	private static int nbEssais = 0;

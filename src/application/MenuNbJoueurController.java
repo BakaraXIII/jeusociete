@@ -1,6 +1,7 @@
 package application;
 
 import java.io.IOException;
+import java.util.Collections;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -45,6 +46,8 @@ public class MenuNbJoueurController {
 		
 		Parent root;
 		try {
+			
+			Collections.shuffle(Jeu.getUnivers());
 		    FXMLLoader loader = new FXMLLoader(getClass().getResource("/MenuUnivers.fxml"));
             root = loader.load();
             MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
