@@ -169,7 +169,7 @@
 	  ],
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
-	  "Enonce": "Mimez le fait de conduire",
+	  "Enonce": "Mimez Charlie Chaplin",
 	  "images": [],
 	  "Media" : "",
 	  "propositions": [],

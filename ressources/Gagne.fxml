@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -25,7 +26,21 @@
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Label text="Vous avez gagné YOUPI" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="“Mouai… Je n’ai qu’une parole, je vais donc vous permettre de résoudre vos problèmes, mais je vous préviens la prochaine fois, il n’y aura pas de jeux, et vous serez directement dans ma collection. Et il y aura une prochaine fois … Faites moi confiance.”" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </Label>
+            <Label text="Gagné" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <padding>
+                  <Insets top="35.0" />
+               </padding>
                <font>
                   <Font size="36.0" />
                </font>

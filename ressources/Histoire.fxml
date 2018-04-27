@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuPrincController">
+   <children>
+      <GridPane prefHeight="781.0" prefWidth="771.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="359.0" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="589.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Quelque part dans le temps" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
+            <Label text="Bienvenue au 32 ème siècles. Les choses ont changé au cours de votre sommeil. Ah on ne vous a pas dit ? Bon reprenons les bases. Suite aux découvertes scientifiques nous avons appris à maîtriser le temps et la matière. Désormais il est possible de se téléporter et de voyager dans le temps. Grâce à ces techniques nous avons appris énormément, sauf que comme pour l’oeil d’Odin, le savoir à un coût.Au début nous étions simplement des fantômes qui regardaient le monde tourner, puis suite à des améliorations nous avons pu directement interagir avec le passé.Hélas, nous avons été idiots et nous avons modifier le cours du temps, nous avons presque détruit notre univers. Suite à cette expérience, notre univers est de plus en plus instable, et l’entité  En Dwi Ghast - plus connue sous le nom du “Collectionneur” - est venu nous trouver. " textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#histoire2" text="Suivant" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

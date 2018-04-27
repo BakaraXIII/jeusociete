@@ -27,10 +27,13 @@
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Label text="Vous allez passer dans la deuxième phase" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Alors que vous pensiez avoir fini maintenant que vous avez récolté les différents objets vous les amenez au “Collectionneur”. “Vous croyez vraiment que cela va suffir ? J’ai dit que je collectionnais les mondes et en particulier ceux des faibles et de ceux qui font des erreurs. Vous pensez avoir prouvé votre valeur en me ramenant ces objets et en évitant les obstacles, mais avant de vous rendre votre liberté vous allez répondre à mes questions. Si et seulement si vous y arrivé alors je considérerai que vous pouvez continuer à vivre, sinon vous compléterez ma collection. “" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font size="24.0" />
                </font>
+               <padding>
+                  <Insets bottom="150.0" left="20.0" right="20.0" />
+               </padding>
             </Label>
             <Button mnemonicParsing="false" onAction="#suivant" text="OK" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
