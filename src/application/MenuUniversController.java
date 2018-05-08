@@ -43,16 +43,16 @@ public class MenuUniversController {
 		Button bouton = (Button) bouton_raw;
 		String en_raw = bouton.getText();
 
-		ArrayList<JSONObject> enigme_univers = new ArrayList<>();
+		ArrayList<Enigme> enigme_univers = new ArrayList<>();
 
-		for (int i = 0; i < Jeu.getEnigmes().length(); i++) {
-			if (Jeu.getEnigmes().getJSONObject(i).getString("Univers").contains(en_raw)) {
-				enigme_univers.add(Jeu.getEnigmes().getJSONObject(i));
+		for (int i = 0; i < Jeu.getEnigmes().size(); i++) {
+			if (Jeu.getEnigmes().get(i).getUnivers().contains(en_raw)) {
+				enigme_univers.add(Jeu.getEnigmes().get(i));
 			}
 		}
 
-		Collections.shuffle(enigme_univers);
-		JSONObject enigmeCourante = enigme_univers.get(0);
+		Collections.sort(enigme_univers);
+		Enigme enigmeCourante = enigme_univers.get(0);
 
 		Parent root;
 		try {

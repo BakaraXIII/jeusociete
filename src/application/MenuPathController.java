@@ -35,7 +35,7 @@ public class MenuPathController {
 		System.out.println("retour");
 		
 		Node bouton = (Node) e.getSource();
-		Stage theStage = (Stage) bouton.getScene().getWindow(); //garder même fenêtre
+		Stage theStage = (Stage) bouton.getScene().getWindow(); //garder mï¿½me fenï¿½tre
 		
 		Parent root;
 		try {
@@ -59,18 +59,18 @@ public class MenuPathController {
 		boolean estAuditif = path2.isSelected();
 		boolean estManuel = path3.isSelected();
 		
-		JSONArray a = new JSONArray();
+		ArrayList<Enigme> a = new ArrayList<>();
 		
 		ArrayList<String> univers = new ArrayList<>();
 		
 		
-		for(int i = 0; i < Jeu.getEnigmes().length(); i++) {
-			JSONObject j = Jeu.getEnigmes().getJSONObject(i);
-			JSONArray typePatho = j.getJSONArray("typePatho");
+		for(int i = 0; i < Jeu.getEnigmes().size(); i++) {
+			Enigme j = Jeu.getEnigmes().get(i);
+			ArrayList<String> typePatho = j.getTypePatho();
 			
-			if((!estVisuel || !typePatho.toList().contains("Visuelle")) && (!estAuditif || !typePatho.toList().contains("Auditive")) && (!estManuel || !typePatho.toList().contains("Manuelle"))) {
-				a.put(j);
-				String u = j.getString("Univers");
+			if((!estVisuel || !typePatho.contains("Visuelle")) && (!estAuditif || !typePatho.contains("Auditive")) && (!estManuel || !typePatho.contains("Manuelle"))) {
+				a.add(j);
+				String u = j.getUnivers();
 				if (!univers.contains(u)) {
 					univers.add(u);
 				}
@@ -78,11 +78,11 @@ public class MenuPathController {
 		}
 			System.out.println(a);
 		
-			Jeu.setUnivers(univers);
+		Jeu.setUnivers(univers);
 		Jeu.setEnigmes(a);
 		
 		Node bouton = (Node) e.getSource();
-		Stage theStage = (Stage) bouton.getScene().getWindow(); //garder même fenêtre
+		Stage theStage = (Stage) bouton.getScene().getWindow(); //garder mï¿½me fenï¿½tre
 		
 		
 		

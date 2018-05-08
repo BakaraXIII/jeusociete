@@ -72,19 +72,19 @@ public class Enigme2Controller {
 	@FXML
 	public Button eAbandon;
 
-	public void displayEnigme(JSONObject enigme) {
-		eUnivers.setText(enigme.getString("Univers"));
-		eEnonce.setText(enigme.getString("Enonce"));
+	public void displayEnigme(Enigme enigme) {
+		eUnivers.setText(enigme.getUnivers());
+		eEnonce.setText(enigme.getEnonce());
 		ArrayList<ImageView> images = new ArrayList<>();
 		images.add(eImage1);
 		images.add(eImage2);
 		images.add(eImage3);
 		images.add(eImage4);
 		images.add(eImage5);
-		if (enigme.getJSONArray("images").length() != 0) {
-			for (int i = 0; i < enigme.getJSONArray("images").length(); i++) {
+		if (!enigme.getImages().isEmpty()) {
+			for (int i = 0; i < enigme.getImages().size(); i++) {
 				ImageView image = images.get(i);
-				Image img = new Image(getClass().getResourceAsStream("/" + enigme.getJSONArray("images").getString(i)));
+				Image img = new Image(getClass().getResourceAsStream("/" + enigme.getImages().get(i)));
 				image.setImage(img);
 			}
 
@@ -94,8 +94,8 @@ public class Enigme2Controller {
 			});
 		}
 
-		if (enigme.getString("Media").length() != 0) {
-			Media m = new Media(getClass().getResource("/" + enigme.getString("Media")).toString());
+		if (enigme.getMedia().length() != 0) {
+			Media m = new Media(getClass().getResource("/" + enigme.getMedia()).toString());
 			MediaPlayer mp = new MediaPlayer(m);
 			mp.setAutoPlay(true);
 			eMedia.setMediaPlayer(mp);
@@ -106,10 +106,10 @@ public class Enigme2Controller {
 		btns.add(eProposition2);
 		btns.add(eProposition3);
 		btns.add(eProposition4);
-		if (enigme.getJSONArray("propositions").length() != 0) {
-			for (int i = 0; i < enigme.getJSONArray("propositions").length(); i++) {
+		if (!enigme.getPropositions().isEmpty()) {
+			for (int i = 0; i < enigme.getPropositions().size(); i++) {
 				Button btn = btns.get(i);
-				btn.setText(enigme.getJSONArray("propositions").getString(i));
+				btn.setText(enigme.getPropositions().get(i));
 			}
 			eAbandon.setVisible(false);
 			eTrouve.setVisible(false);
@@ -118,7 +118,7 @@ public class Enigme2Controller {
 			btns.forEach(i -> i.setVisible(false));
 		}
 
-		eSolution.setText(enigme.getString("reponse"));
+		eSolution.setText(enigme.getReponse());
 
 		eSolution.setVisible(false);
 
@@ -181,7 +181,7 @@ public class Enigme2Controller {
 	public void suivant(ActionEvent e) {
 
 		Node bouton = (Node) e.getSource();
-		Stage theStage = (Stage) bouton.getScene().getWindow(); // garder même fenêtre
+		Stage theStage = (Stage) bouton.getScene().getWindow(); // garder mï¿½me fenï¿½tre
 
 		Parent root;
 		try {
@@ -220,16 +220,16 @@ public class Enigme2Controller {
 	protected void initialize() {
 		String univers = Jeu.getUnivers().remove(0);
 
-		ArrayList<JSONObject> enigme_univers = new ArrayList<>();
+		ArrayList<Enigme> enigme_univers = new ArrayList<>();
 
-		for (int i = 0; i < Jeu.getEnigmes().length(); i++) {
-			if (Jeu.getEnigmes().getJSONObject(i).getString("Univers").contains(univers)) {
-				enigme_univers.add(Jeu.getEnigmes().getJSONObject(i));
+		for (int i = 0; i < Jeu.getEnigmes().size(); i++) {
+			if (Jeu.getEnigmes().get(i).getUnivers().contains(univers)) {
+				enigme_univers.add(Jeu.getEnigmes().get(i));
 			}
 		}
 
 		Collections.shuffle(enigme_univers);
-		JSONObject enigmeCourante = enigme_univers.get(0);
+		Enigme enigmeCourante = enigme_univers.get(0);
 
 		displayEnigme(enigmeCourante);
 	}

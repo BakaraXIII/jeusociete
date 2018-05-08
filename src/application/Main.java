@@ -36,8 +36,8 @@ public class Main extends Application {
 	        stage.setScene(scene);
 	        stage.show();
 	        
-	        URL url = getClass().getResource("./ressources/enigme.txt");
-	        InputStream is = Main.class.getResourceAsStream("/enigme.txt");
+	        //URL url = getClass().getResource("./ressources/enigme.txt");
+	        InputStream is = Main.class.getResourceAsStream("/enigme.json");
 	        //File file = new File(url.toString()); //lecture du JSON changer le chemin avec celui de chez vou, j'ai mis l'absolu parce que le relatif ne marche pas
 	        
 	        BufferedReader br = new BufferedReader(new InputStreamReader(is));

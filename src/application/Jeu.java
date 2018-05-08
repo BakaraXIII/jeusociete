@@ -1,7 +1,10 @@
 package application;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
+import application.Enigme;
 import org.json.JSONArray;
 
 
@@ -19,7 +22,7 @@ public class Jeu {
 		add("Temps Modernes");
 		add("Siecle des lumieres");
 	}};
-	private static JSONArray enigmes = null;
+	private static ArrayList<Enigme> enigmes = null;
 	private static int nbEssais = 0;
 	
 	
@@ -73,13 +76,19 @@ public class Jeu {
 		Jeu.univers = univers;
 	}
 
-	public static JSONArray getEnigmes() {
+	public static List<Enigme> getEnigmes() {
 		return enigmes;
 	}
 
 	public static void setEnigmes(JSONArray enigmes) {
-		Jeu.enigmes = enigmes;
+		Jeu.enigmes = new ArrayList<>(Enigme.getEnigmes(enigmes));
+		Collections.shuffle(Jeu.enigmes);
 	}
+	
+	public static void setEnigmes(ArrayList<Enigme> enigmes) {
+        Jeu.enigmes = enigmes;
+        Collections.shuffle(Jeu.enigmes);
+    }
 
 	public static int getnbEssais() {
 		return nbEssais;

@@ -77,19 +77,22 @@ public class EnigmeController {
 	@FXML
 	public GridPane eGrid;
 	
-	public void displayEnigme(JSONObject enigme) {		
-		eUnivers.setText(enigme.getString("Univers"));	
-		eEnonce.setText(enigme.getString("Enonce"));
+	public void displayEnigme(Enigme enigme) {
+	    
+	    Enigme.changerPriorite(Jeu.getEnigmes(), enigme);
+	    
+		eUnivers.setText(enigme.getUnivers());	
+		eEnonce.setText(enigme.getEnonce());
 		ArrayList<ImageView> images = new ArrayList<>();
 		images.add(eImage1);
 		images.add(eImage2);
 		images.add(eImage3);
 		images.add(eImage4);
 		images.add(eImage5);
-		if(enigme.getJSONArray("images").length() != 0) {
-			for (int i = 0; i < enigme.getJSONArray("images").length(); i++) {
+		if(!enigme.getImages().isEmpty()) {
+			for (int i = 0; i < enigme.getImages().size(); i++) {
 				ImageView image = images.get(i);
-				Image img = new Image(getClass().getResourceAsStream("/"+enigme.getJSONArray("images").getString(i)));
+				Image img = new Image(getClass().getResourceAsStream("/"+enigme.getImages().get(i)));
 				image.setImage(img);
 			}	
 				
@@ -99,14 +102,14 @@ public class EnigmeController {
 			});
 		}
 		
-		if(enigme.getString("Media").length() != 0) {
-			Media m = new Media(getClass().getResource("/"+enigme.getString("Media")).toString());
+		if(enigme.getMedia().length() != 0) {
+			Media m = new Media(getClass().getResource("/"+enigme.getMedia()).toString());
 			MediaPlayer mp = new MediaPlayer(m);
 			mp.setAutoPlay(true);
 			eMedia.setMediaPlayer(mp);
 		}
 		
-		if(enigme.getJSONArray("images").length() == 0 && enigme.getString("Media").length() == 0) {
+		if(enigme.getImages().isEmpty() && enigme.getMedia().length() == 0) {
 			eGrid.getRowConstraints().get(2).setMaxHeight(0);
 		}
 		
@@ -115,10 +118,10 @@ public class EnigmeController {
 		btns.add(eProposition2);
 		btns.add(eProposition3);
 		btns.add(eProposition4);
-		if(enigme.getJSONArray("propositions").length() != 0) {
-			for (int i = 0; i < enigme.getJSONArray("propositions").length(); i++) {
+		if(!enigme.getPropositions().isEmpty()) {
+			for (int i = 0; i < enigme.getPropositions().size(); i++) {
 				Button btn = btns.get(i);
-				btn.setText(enigme.getJSONArray("propositions").getString(i));
+				btn.setText(enigme.getPropositions().get(i));
 			}
 			eTrouve.setVisible(false);
 			eAbandon.setVisible(false);	
@@ -126,7 +129,7 @@ public class EnigmeController {
 			btns.forEach(i -> i.setVisible(false));
 		}
 		
-		eSolution.setText(enigme.getString("reponse"));
+		eSolution.setText(enigme.getReponse());
 		
 		eSolution.setVisible(false);
 		eRetour.setVisible(false);
