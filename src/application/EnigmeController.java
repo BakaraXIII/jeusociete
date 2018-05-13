@@ -2,6 +2,11 @@ package application;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
 
 import org.json.JSONObject;
 
@@ -11,6 +16,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -19,6 +26,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class EnigmeController {
@@ -76,6 +84,7 @@ public class EnigmeController {
 	
 	@FXML
 	public GridPane eGrid;
+	
 	
 	public void displayEnigme(Enigme enigme) {
 	    
@@ -144,12 +153,14 @@ public class EnigmeController {
         Stage theStage = (Stage) bouton_raw.getScene().getWindow(); //garder m�me fen�tre
         Button bouton = (Button) bouton_raw;
         String proposition = bouton.getText();
+        boolean trouve = false;
         
         if(eSolution.getText().equals(proposition)) {
             // TODO: Faire une système de coloration du bouton en fonction de la réponse
             //bouton.getStyleClass().add("addBobOk");
             eSolution.setText("TROUVE !\n" + eSolution.getText());
             Jeu.setNbItem(Jeu.getNbItem()-1);
+            trouve = true;
         } else {
         	eSolution.setText("PERDU !\n" + eSolution.getText());
         	Jeu.setNbEssais(Jeu.getnbEssais()-1);
@@ -164,6 +175,10 @@ public class EnigmeController {
         	eMedia.getMediaPlayer().stop();
         }
         eRetour.setVisible(true);
+        
+        if(trouve) {
+        	generationEvenement();
+        }
 	}
 	
 	public void abandon(ActionEvent e) {
@@ -205,6 +220,7 @@ public class EnigmeController {
 	
 	public void trouve(ActionEvent e) {
 		Jeu.setNbItem(Jeu.getNbItem()-1);
+		generationEvenement();
 		retour(e);
 	}
 	
@@ -255,6 +271,42 @@ public class EnigmeController {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
+	}
+	
+	public void generationEvenement() {
+		Random rand = new Random();
+		
+		double nb = 0.5+((1.0/Jeu.getNbItem())-(1.0/8.0));
+		
+		if(nb == Double.POSITIVE_INFINITY) {
+			return;
+		}
+		
+		double alea = rand.nextDouble();
+		
+		System.out.println(alea+" "+nb);
+
+		if(alea < 0.5+((1.0/Jeu.getNbItem())-(1.0/8.0))) {
+			
+			int numUnivers = rand.nextInt(Jeu.getUnivers().size()+1);
+			
+			String univers = "";
+			
+			if(numUnivers < Jeu.getUnivers().size()) {
+				univers = Jeu.getUnivers().get(numUnivers);
+			}
+			
+			List<String> msgs = Jeu.getEvenements().get(univers);
+			Collections.shuffle(msgs);
+			
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Ev�nement");
+			alert.setHeaderText(null);
+			alert.setContentText(msgs.get(0));
+			alert.initModality(Modality.NONE);
+
+			alert.showAndWait();
+		}
 	}
 	
 }

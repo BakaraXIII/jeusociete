@@ -1,0 +1,41 @@
+[
+	{
+		"univers" : "Moyen age",
+		"message" : "Un tournoi de chevaliers vous empêche de partir. Si vous êtes présent sur l’univers Moyen âge, vous ne pouvez pas vous échapper pendant ce tour."
+	},
+	
+	{
+		"univers" : "Renaissance",
+		"message" : "Vous êtes invité au banquet du Roi Soleil et comme vous êtes poli, vous faites honneur aux plats. Cependant, après le deuxième plat de viandes, vous vous sentez ballonné. Si vous êtes présent dans cet univers, vous ne pouvez vous déplacer que d’une case."
+	},
+	
+	{
+		"univers" : "Prehistoire",
+		"message" : "Une ruée de mammouth empêche d'accéder aux cases de la préhistoire pendant ce tour. Si vous êtes déjà sur cet univers, déplacez-vous vers un autre."
+	},
+	
+	{
+		"univers" : "Antiquite",
+		"message" : "Vous êtes absorbé  par les paroles des philosophes grecs.. Vous vous remettez en question sur votre destinée. Si vous êtes présent dans l’univers, vous ne pouvez pas utiliser cette figurine pendant ce tour."
+	},
+	
+	{
+		"univers" : "Annees 80",
+		"message" : "Votre magnétophone ne marche plus. Vous ne pouvez pas faire d’énigmes sur l’univers années 80 pendant ce tour."
+	},
+	
+	{
+		"univers" : "Siecle des lumieres",
+		"message" : "Un grand débat entre Diderot et Voltaire éclate, vous devez immédiatement résoudre une énigme du siècle des lumières. Si vous êtes présent dans l’univers et que vous réussissez vous gagnez un objet sinon vous perdez votre tour."
+	},
+	
+	{
+		"univers" : "",
+		"message" : "Le ciel est beau et tout semble parfait, continuez votre quête."
+	},
+	
+	{
+		"univers" : "",
+		"message" : "Vous sentez sous vos pieds un tremblement sourd, mais qui s'arrête rapidement. Encore un ultimatum…"
+	}
+]

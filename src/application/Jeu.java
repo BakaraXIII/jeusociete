@@ -2,10 +2,12 @@ package application;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 import application.Enigme;
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 
 public class Jeu {
@@ -24,6 +26,7 @@ public class Jeu {
 	}};
 	private static ArrayList<Enigme> enigmes = null;
 	private static int nbEssais = 0;
+	private static HashMap<String, List<String>> evenements = new HashMap<>();
 	
 	
 	public static int getNbJoueur() {
@@ -74,6 +77,19 @@ public class Jeu {
 
 	public static void setUnivers(ArrayList<String> univers) {
 		Jeu.univers = univers;
+		
+		ArrayList<String> universASupprimer = new ArrayList<>();
+		
+		
+		for(String key : Jeu.evenements.keySet()) {
+			if(!key.equals("") && !Jeu.univers.contains(key)) {
+				universASupprimer.add(key);
+			}
+		}
+		
+		for(String u : universASupprimer) {
+			Jeu.evenements.remove(u);
+		}
 	}
 
 	public static List<Enigme> getEnigmes() {
@@ -96,6 +112,25 @@ public class Jeu {
 
 	public static void setNbEssais(int nbEssais) {
 		Jeu.nbEssais = nbEssais;
+	}
+
+
+	public static HashMap<String, List<String>> getEvenements() {
+		return evenements;
+	}
+
+
+	public static void setEvenements(JSONArray evenements) {
+		for(int i=0; i < evenements.length(); i++) {
+			JSONObject data = evenements.getJSONObject(i);
+			if(Jeu.evenements.containsKey(data.getString("univers"))) {
+				Jeu.evenements.get(data.getString("univers")).add(data.getString("message"));
+			} else {
+				ArrayList<String> messages = new ArrayList<>();
+				messages.add(data.getString("message"));
+				Jeu.evenements.put(data.getString("univers"), messages);
+			}
+		}
 	}
 	
 	

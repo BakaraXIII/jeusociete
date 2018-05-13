@@ -3,6 +3,7 @@ package application;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URI;
@@ -36,28 +37,36 @@ public class Main extends Application {
 	        stage.setScene(scene);
 	        stage.show();
 	        
-	        //URL url = getClass().getResource("./ressources/enigme.txt");
-	        InputStream is = Main.class.getResourceAsStream("/enigme.json");
-	        //File file = new File(url.toString()); //lecture du JSON changer le chemin avec celui de chez vou, j'ai mis l'absolu parce que le relatif ne marche pas
 	        
-	        BufferedReader br = new BufferedReader(new InputStreamReader(is));
-	        
-	       String st = "";
-	       while (true) {
-	    	    final String line = br.readLine();
-	    	    if (line == null) break;
-	    	    
-	    	    st += line;
-	    	}
-	        
-	        System.out.println(st);
-	        
-	        JSONArray a = new JSONArray(st);
+	        JSONArray a = new JSONArray(getData("/enigme.json"));
 	        Jeu.setEnigmes(a);
-	        br.close();
+	        
+	        JSONArray aevt = new JSONArray(getData("/evenement.json"));
+	        Jeu.setEvenements(aevt);
+	        
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static String getData(String path) throws IOException {
+		InputStream is = Main.class.getResourceAsStream(path);
+        //File file = new File(url.toString()); //lecture du JSON changer le chemin avec celui de chez vou, j'ai mis l'absolu parce que le relatif ne marche pas
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        
+       String st = "";
+       while (true) {
+    	    final String line = br.readLine();
+    	    if (line == null) break;
+    	    
+    	    st += line;
+    	}
+        
+        System.out.println(st);
+        br.close();
+        
+        return st;
 	}
 	
 	public static void main(String[] args) {
