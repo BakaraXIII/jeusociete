@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuUniversController">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuUniversController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -26,49 +26,52 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Quelque part dans le temps" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label text="Quelque part dans le temps" textFill="#bf1313" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="39.0" />
                </font>
             </Label>
             <Label text="Sélectionnez l'univers correspondant" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Poiret One" size="26.0" />
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Button fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="275.0" text="Préhistoire" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3">
+            <Button fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="395.0" stylesheets="@d.css" text="Préhistoire" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="35.0" />
                </font>
                <GridPane.margin>
                   <Insets left="30.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="btn2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="275.0" text="Antiquité" textAlignment="CENTER" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <Button fx:id="btn2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="395.0" stylesheets="@d.css" text="Antiquité" textAlignment="CENTER" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="35.0" />
                </font>
                <GridPane.margin>
                   <Insets right="30.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="btn4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="275.0" text="Année 80" textAlignment="CENTER" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+            <Button fx:id="btn4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="395.0" stylesheets="@d.css" text="Année 80" textAlignment="CENTER" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="25.0" />
                </font>
                <GridPane.margin>
                   <Insets right="30.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="btn5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="275.0" text="Moyen age" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <Button fx:id="btn5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="395.0" stylesheets="@d.css" text="Moyen age" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="35.0" />
                </font>
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
             </Button>
-            <Button fx:id="btn3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="275.0" text="Rennaissance" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="4">
+            <Button fx:id="btn3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="395.0" stylesheets="@d.css" text="Rennaissance" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="35.0" />
                </font>
                <GridPane.margin>
                   <Insets left="30.0" />
@@ -78,10 +81,10 @@
                <children>
                   <Label contentDisplay="CENTER" text="Essais restants : ">
                      <font>
-                        <Font size="24.0" />
+                        <Font name="Poiret One" size="25.0" />
                      </font>
                   </Label>
-                  <Label fx:id="eNbEssais" alignment="CENTER" text="n">
+                  <Label fx:id="eNbEssais" alignment="CENTER" text="n" textFill="#bf1313">
                      <font>
                         <Font size="24.0" />
                      </font>

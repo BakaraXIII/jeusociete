@@ -33,7 +33,7 @@ public class Main extends Application {
 	        
 	        scene.getStylesheets().add(getClass().getResource("/application.css").toExternalForm());
 	    
-	        stage.setTitle("FXML Welcome");
+	        stage.setTitle("Jeu");
 	        stage.setScene(scene);
 	        stage.show();
 	        

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -19,17 +23,28 @@
             <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="589.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Quelque part dans le temps" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label text="Quelque part dans le temps" textFill="#bf1313" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="39.0" />
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Label text="Perdu" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Perdu" textFill="#ea0b0b" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="50.0" />
                </font>
+               <effect>
+                  <Bloom threshold="0.18" />
+               </effect>
             </Label>
+            <ImageView fitHeight="230.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@Untitled.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="-40.0" top="375.0" />
+               </GridPane.margin>
+            </ImageView>
          </children>
       </GridPane>
    </children>

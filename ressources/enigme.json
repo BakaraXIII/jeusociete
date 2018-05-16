@@ -126,7 +126,7 @@
 	  "Enonce": "Trouvez le mot grâce à ces images",
 	  "images": [
 		"multimedia/temps.jpg",
-		"multimedia/plier.jpg"
+		"multimedia/plier.png"
 	  ],
 	  "Media" : "",
 	  "propositions": [],
@@ -503,7 +503,7 @@
 	  "Enonce": "Qui est le chanteur ?",
 	  "images": [],
 	  "Media" : "multimedia/Bandolero.mp3",
-	  "propositions": ["Bandolero","Début de soirée","Téléphone","les Forbans"],
+	  "propositions": ["Bandolero","Début de soirée","Téléphone","Les Forbans"],
 	  "reponse": "Bandolero"
 	},
 	
@@ -541,9 +541,9 @@
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
 	  "images": [],
-	  "Media" : "multimedia/Cyndi_Lauper.mp3",
-	  "propositions": ["début de soirée","Europe","Depeche Mode","Partenaire Particulier"],
-	  "reponse": "début de soirée"
+	  "Media" : "multimedia/Debut_Soire.mp3",
+	  "propositions": ["Début de soirée","Europe","Depeche Mode","Partenaire Particulier"],
+	  "reponse": "Début de soirée"
 	},
 	
 	{
@@ -568,7 +568,7 @@
 	  "Enonce": "Qui est le chanteur ?",
 	  "images": [],
 	  "Media" : "multimedia/Gilbert_Montagne.mp3",
-	  "propositions": ["Daniel Balavoine","Gérard Blanc","Gilbert Montagné","françois valéry"],
+	  "propositions": ["Daniel Balavoine","Gérard Blanc","Gilbert Montagné","François Valéry"],
 	  "reponse": "Gilbert Montagné"
 	},
 	

@@ -8,9 +8,10 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Transition">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Transition">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -21,28 +22,29 @@
             <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="589.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Quelque part dans le temps" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label text="Quelque part dans le temps" textFill="#bf1313" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="39.0" />
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Label text="Alors que vous pensiez avoir fini maintenant que vous avez récolté les différents objets vous les amenez au “Collectionneur”. “Vous croyez vraiment que cela va suffir ? J’ai dit que je collectionnais les mondes et en particulier ceux des faibles et de ceux qui font des erreurs. Vous pensez avoir prouvé votre valeur en me ramenant ces objets et en évitant les obstacles, mais avant de vous rendre votre liberté vous allez répondre à mes questions. Si et seulement si vous y arrivé alors je considérerai que vous pouvez continuer à vivre, sinon vous compléterez ma collection. “" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Alors que vous pensiez avoir fini, maintenant que vous avez récolté les différents objets, vous les amenez au “Collectionneur”. “Vous croyez vraiment que cela va suffir ? J’ai dit que je collectionnais les mondes et en particulier ceux des faibles et de ceux qui font des erreurs. Vous pensez avoir prouvé votre valeur en me ramenant ces objets et en évitant les obstacles, mais avant de vous rendre votre liberté vous allez répondre à mes questions. Si et seulement si vous y arrivez alors je considérerai que vous pouvez continuer à vivre, sinon vous compléterez ma collection. “" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Poiret One" size="25.0" />
                </font>
                <padding>
                   <Insets bottom="150.0" left="20.0" right="20.0" />
                </padding>
             </Label>
-            <Button mnemonicParsing="false" onAction="#suivant" text="OK" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Button mnemonicParsing="false" onAction="#suivant" stylesheets="@b.css" text="OK" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="80.0" />
                </GridPane.margin>
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="35.0" />
                </font>
             </Button>
+            <MediaView fx:id="eTransition" fitHeight="200.0" fitWidth="200.0" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>

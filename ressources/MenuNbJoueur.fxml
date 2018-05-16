@@ -4,13 +4,15 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuNbJoueurController">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuNbJoueurController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -24,54 +26,68 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Quelque part dans le temps" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label text="Quelque part dans le temps" textFill="#bf1313" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="39.0" />
                </font>
             </Label>
             <Label text="Sélectionnez le nombre de participants" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Poiret One" size="26.0" />
                </font>
+               <GridPane.margin>
+                  <Insets left="300.0" />
+               </GridPane.margin>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" text="2" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" stylesheets="@d.css" text="2" GridPane.rowIndex="2">
                <font>
-                  <Font size="48.0" />
+                  <Font name="Poiret One" size="49.0" />
                </font>
                <GridPane.margin>
-                  <Insets left="130.0" />
+                  <Insets left="430.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" text="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" stylesheets="@d.css" text="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                <font>
-                  <Font size="48.0" />
-               </font>
-               <GridPane.margin>
-                  <Insets right="130.0" />
-               </GridPane.margin>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" text="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
-               <font>
-                  <Font size="48.0" />
+                  <Font name="Poiret One" size="49.0" />
                </font>
                <GridPane.margin>
                   <Insets right="130.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" text="6" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" stylesheets="@d.css" text="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                <font>
-                  <Font size="48.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" text="4" GridPane.rowIndex="3">
-               <font>
-                  <Font size="48.0" />
+                  <Font name="Poiret One" size="49.0" />
                </font>
                <GridPane.margin>
-                  <Insets left="130.0" />
+                  <Insets right="130.0" />
                </GridPane.margin>
             </Button>
+            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" stylesheets="@d.css" text="6" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Poiret One" size="49.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="300.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#nombre" prefHeight="120.0" prefWidth="120.0" stylesheets="@d.css" text="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Poiret One" size="49.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="430.0" />
+               </GridPane.margin>
+            </Button>
+            <ImageView fitHeight="250.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@Untitled.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="55.0" left="-40.0" />
+               </GridPane.margin>
+            </ImageView>
          </children>
       </GridPane>
    </children>

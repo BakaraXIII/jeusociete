@@ -191,6 +191,10 @@ public class EnigmeController {
                 root = loader.load();
                 //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
                 
+                Media m = new Media(getClass().getResource("/multimedia/perdu.mp3").toString());
+    			MediaPlayer mp = new MediaPlayer(m);
+    			mp.setAutoPlay(true);
+                
                 Scene scene = new Scene(root);
                 
                 Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
@@ -220,7 +224,7 @@ public class EnigmeController {
 	
 	public void trouve(ActionEvent e) {
 		Jeu.setNbItem(Jeu.getNbItem()-1);
-		generationEvenement();
+		//generationEvenement();
 		retour(e);
 	}
 	
@@ -233,11 +237,15 @@ public class EnigmeController {
                 root = loader.load();
                 //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
                 
+                Media m = new Media(getClass().getResource("/multimedia/perdu.mp3").toString());
+    			MediaPlayer mp = new MediaPlayer(m);
+    			mp.setAutoPlay(true);
+                
                 Scene scene = new Scene(root);
                 
                 Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
                 
-                theStage.setTitle("FXML Welcome");
+                theStage.setTitle("Jeu");
                 theStage.setScene(scene);
                 theStage.show();
             
@@ -246,11 +254,15 @@ public class EnigmeController {
 	            root = loader.load();
 	            //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
 	            
+	            Media m = new Media(getClass().getResource("/multimedia/transition.mp3").toString());
+	    		MediaPlayer mp = new MediaPlayer(m);
+	    		mp.setAutoPlay(true);
+	            
 	            Scene scene = new Scene(root);
 	            
 	            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
 	            
-	            theStage.setTitle("FXML Welcome");
+	            theStage.setTitle("Jeu");
 	            theStage.setScene(scene);
 	            theStage.show();
             
@@ -263,7 +275,7 @@ public class EnigmeController {
 	            
 	            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
 	            
-	            theStage.setTitle("FXML Welcome");
+	            theStage.setTitle("Jeu");
 	            theStage.setScene(scene);
 	            theStage.show();
             }

@@ -73,6 +73,9 @@ public class Enigme2Controller {
 	public Button eAbandon;
 
 	public void displayEnigme(Enigme enigme) {
+		
+		Enigme.changerPriorite(Jeu.getEnigmes(), enigme);
+		
 		eUnivers.setText(enigme.getUnivers());
 		eEnonce.setText(enigme.getEnonce());
 		ArrayList<ImageView> images = new ArrayList<>();
@@ -135,7 +138,11 @@ public class Enigme2Controller {
 			// MenuUniversController controller =
 			// loader.<MenuUniversController>getController(); //Recup�re controller
 			// fenetre suivante
-
+			
+			Media m = new Media(getClass().getResource("/multimedia/perdu.mp3").toString());
+ 			MediaPlayer mp = new MediaPlayer(m);
+ 			mp.setAutoPlay(true);
+			
 			Scene scene = new Scene(root);
 
 			Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
@@ -188,6 +195,11 @@ public class Enigme2Controller {
 
 			if (Jeu.getUnivers().size() == 0) {
 				root = FXMLLoader.load(getClass().getResource("/Gagne.fxml"));
+				
+				Media m = new Media(getClass().getResource("/multimedia/gagne.mp3").toString());
+	    		MediaPlayer mp = new MediaPlayer(m);
+	    		mp.setAutoPlay(true);
+				
 				Scene scene = new Scene(root);
 
 				theStage.setTitle("FXML Welcome");
@@ -195,6 +207,11 @@ public class Enigme2Controller {
 				theStage.show();
 			}else if(Jeu.getnbEssais() < 0){
 				root = FXMLLoader.load(getClass().getResource("/Perdu.fxml"));
+				
+				Media m = new Media(getClass().getResource("/multimedia/perdu.mp3").toString());
+	    		MediaPlayer mp = new MediaPlayer(m);
+	    		mp.setAutoPlay(true);
+				
 				Scene scene = new Scene(root);
 
 				theStage.setTitle("FXML Welcome");

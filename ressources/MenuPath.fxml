@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="728.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuPathController">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuPathController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -26,43 +26,43 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Quelque part dans le temps" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label text="Quelque part dans le temps" textFill="#bf1313" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="39.0" />
                </font>
             </Label>
             <Label text="Sélectionnez, si nécessaire, les types de pathologies" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Poiret One" size="26.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" onAction="#valider" text="Valider" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#valider" stylesheets="@a.css" text="Valider" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="37.0" />
                </font>
                <GridPane.margin>
                   <Insets right="100.0" />
                </GridPane.margin>
             </Button>
-            <CheckBox fx:id="path1" mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Visuel" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <CheckBox fx:id="path1" mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" stylesheets="@d.css" text="Visuel" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="37.0" />
                </font>
             </CheckBox>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
             <CheckBox fx:id="path2" mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Auditif" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="37.0" />
                </font>
             </CheckBox>
             <CheckBox fx:id="path3" mnemonicParsing="false" prefHeight="53.0" prefWidth="193.0" text="Manuel" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="37.0" />
                </font>
             </CheckBox>
-            <Button mnemonicParsing="false" onAction="#retour" text="Retour" GridPane.rowIndex="5">
+            <Button mnemonicParsing="false" onAction="#retour" stylesheets="@b.css" text="Retour" GridPane.rowIndex="5">
                <font>
-                  <Font size="36.0" />
+                  <Font name="Poiret One" size="37.0" />
                </font>
                <GridPane.margin>
                   <Insets left="100.0" />
