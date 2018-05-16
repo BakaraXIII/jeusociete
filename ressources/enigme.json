@@ -6,10 +6,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/chat.jpg",
-		"multimedia/eau.jpg"
-	  ],
+	  "images": "multimedia/chateau.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -22,11 +19,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/ce.jpg",
-		"multimedia/nid.jpg",
-		"multimedia/heure.jpg"
-	  ],
+	  "images": "multimedia/chasse.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -39,10 +32,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/but.jpg",
-		"multimedia/chais.jpg"
-	  ],
+	  "images": "multimedia/buchet.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -55,13 +45,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/mai.jpg",
-		"multimedia/nez.jpg",
-		"multimedia/sss.jpg",
-		"multimedia/trait.jpg",
-		"multimedia/le.jpg"
-	  ],
+	  "images": "multimedia/chretien.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -74,10 +58,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/haie.jpg",
-		"multimedia/ku.jpg"
-	  ],
+	  "images": "multimedia/ecu.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -90,11 +71,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/chat.jpg",
-		"multimedia/sss.jpg"
-
-	  ],
+	  "images": "multimedia/empire.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -107,11 +84,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/craie.jpg",
-		"multimedia/ti.jpg",
-		"multimedia/un.jpg"
-	  ],
+	  "images": "multimedia/fable.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -124,10 +97,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/temps.jpg",
-		"multimedia/plier.png"
-	  ],
+	  "images": "multimedia/menestrel.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -140,11 +110,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/an.jpg",
-		"multimedia/pie.jpg",
-		"multimedia/r.jpg"
-	  ],
+	  "images": "multimedia/seigneur.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -157,10 +123,7 @@
 	  "categorie": "Rébus",
 	  "Univers": "Moyen age",
 	  "Enonce": "Trouvez le mot grâce à ces images",
-	  "images": [
-		"multimedia/fa.jpg",
-		"multimedia/bleu.jpg"
-	  ],
+	  "images": "multimedia/templier.jpg",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -171,7 +134,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Dans quelle région d'Italie est né Léonard de Vinci ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Sicile", "Lombardie", "Latium", "Toscane"],
 	  "reponse": "Toscane"
@@ -182,7 +145,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Christophe Colomb a découvert l'Amérique, mais où a-t-il débarqué d'abord ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["San Salvador", "Cuba", "Mexique", "Equateur"],
 	  "reponse": "San Salvador"
@@ -193,7 +156,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Au cours de ce voyage, Magellan découvre un détroit qui portera son nom : où est-ce ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Uruguay", "Argentine", "Chili", "Bresil"],
 	  "reponse": "Argentine"
@@ -204,7 +167,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Quel astronome polonais découvre le principe révolutionnaire de l'héliocentrisme, au 15ème siècle ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Galilée", "Copernic", "Kepler", "Ptolémée"],
 	  "reponse": "Copernic"
@@ -215,7 +178,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Quand a été peinte la Joconde ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["1513-1515", "1483-1493", "1611-1621", "1503-1506"],
 	  "reponse": "1503-1506"
@@ -226,7 +189,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Qui règne sur la France au moment de la Saint Barthélémy ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Charles IV", "Louis IX", "Charles IX", "Henry IV"],
 	  "reponse": "Charles IX"
@@ -237,7 +200,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Quel était l’autre nom de la Joconde ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Bellissima", "Mona Lisa", "Léonard", "Florencia"],
 	  "reponse": "Mona Lisa"
@@ -248,7 +211,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Comment s'appelle la mère de Gargantua ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Gargamelle", "Pantagruelle", "Gargantuelle", "Patangrua"],
 	  "reponse": "Gargamelle"
@@ -259,7 +222,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "En 1559, ce roi de France meurt d'une blessure reçue à l'œil lors d'une joute. De qui s'agit-il ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Henri II", "François Ier", "Louis Philippe Ier", "Louis XVI"],
 	  "reponse": "Henri II"
@@ -270,7 +233,7 @@
 	  "categorie": "Quizz historique",
 	  "Univers": "Renaissance",
 	  "Enonce": "Dans quelle ville est apparue la Renaissance ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Paris", "Barcelone", "Florence", "Athènes"],
 	  "reponse": "Florence"
@@ -283,7 +246,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot gourdin",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -296,7 +259,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot mammouth",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -309,7 +272,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot feu",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -322,7 +285,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot lance",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -335,7 +298,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot silex",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -348,7 +311,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot caverne",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -361,7 +324,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot crane",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -374,7 +337,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot piège",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -387,7 +350,7 @@
 	  "categorie": "Pictionnary",
 	  "Univers": "Prehistoire",
 	  "Enonce": "Faites deviner le mot dolmen",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -398,7 +361,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Quelle est la moitié de 2 plus 2 ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["3","2","4","1"],
 	  "reponse": "3"
@@ -409,7 +372,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Trouver la suite de 1 1 2 3 5 8",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["10","13","15","12"],
 	  "reponse": "13"
@@ -420,7 +383,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Réussir à trouver 120 avec les chiffres 2 4 6 et 8 en ne les utilisant qu'une seule fois.",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -431,7 +394,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Réussir à trouver 28 avec les chiffres 2 7 8 et 10 en ne les utilisant qu'une seule fois.",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -442,7 +405,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Trouver les signes : 7 7 7 = 6",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -453,7 +416,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Trouver la suite de 1 11 21 1211 111221",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["1121211","2211122","312211","321211"],
 	  "reponse": "312211"
@@ -464,7 +427,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Un homme et son fils ont 36 ans à eux deux. L'homme a 30 ans de plus que son fils. Quel âge a le fils ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["6","3","9","10"],
 	  "reponse": "3"
@@ -475,7 +438,7 @@
 	  "categorie": "Mathematique",
 	  "Univers": "Antiquite",
 	  "Enonce": "Quel nombre obtenez-vous en multipliant tous les nombres d’un clavier téléphonique classique ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["81","362880","36","0"],
 	  "reponse": "0"
@@ -488,7 +451,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Quel est le groupe ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/AHA_TakeMeOn.mp3",
 	  "propositions": ["Indochine","Europe","A-HA","U2"],
 	  "reponse": "A-HA"
@@ -501,7 +464,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Bandolero.mp3",
 	  "propositions": ["Bandolero","Début de soirée","Téléphone","Les Forbans"],
 	  "reponse": "Bandolero"
@@ -514,7 +477,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Cookie_Dingler.mp3",
 	  "propositions": ["Etienne Daho","Cookie Dingler","Indochine","Téléphone"],
 	  "reponse": "Cookie Dingler"
@@ -527,7 +490,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Cyndi_Lauper.mp3",
 	  "propositions": ["Madonna","Sandra","Sheila","Cyndi Lauper"],
 	  "reponse": "Cyndi Lauper"
@@ -540,7 +503,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Debut_Soire.mp3",
 	  "propositions": ["Début de soirée","Europe","Depeche Mode","Partenaire Particulier"],
 	  "reponse": "Début de soirée"
@@ -553,7 +516,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Europe.mp3",
 	  "propositions": ["The police","Océanie","Queen","Europe"],
 	  "reponse": "Europe"
@@ -566,7 +529,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Gilbert_Montagne.mp3",
 	  "propositions": ["Daniel Balavoine","Gérard Blanc","Gilbert Montagné","François Valéry"],
 	  "reponse": "Gilbert Montagné"
@@ -579,7 +542,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Indochine.mp3",
 	  "propositions": ["Les Forbans","Indochine","Téléphone","Taxi Girl"],
 	  "reponse": "Indochine"
@@ -592,7 +555,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Lionel_Richie.mp3",
 	  "propositions": ["Lionel Richie","Barry White","Ray Charles","Michael Jackson"],
 	  "reponse": "Lionel Richie"
@@ -605,7 +568,7 @@
 	  "categorie": "Blind test",
 	  "Univers": "Annees 80",
 	  "Enonce": "Qui est le chanteur ?",
-	  "images": [],
+	  "images": "",
 	  "Media" : "multimedia/Survivor.mp3",
 	  "propositions": ["Aerosmith","The police","Blue Angel","Survivor"],
 	  "reponse": "Survivor"
@@ -617,7 +580,7 @@
 	  "categorie": "Charade",
 	  "Univers": "Siecle des lumieres",
 	  "Enonce": "Mon premier est un adjectif possessif (2ème personne du pluriel)\nMon deuxième est le son de la lettre \"L\"\nLes paysans cultivent mon troisième\nMon tout est un philosophe.",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Voltaire","Rousseau","Socrate","Descartes"],
 	  "reponse": "Voltaire"
@@ -628,7 +591,7 @@
 	  "categorie": "Charade",
 	  "Univers": "Siecle des lumieres",
 	  "Enonce": "Mon premier est la première lettre de l'alphabet\nMon deuxième est l'abréviation de kilo\nMon troisième est un objet que l'on lance dans un jeu de société\nMon quatrième est la partie molle du pain\nMon tout est un rassemblement de savant",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Assemblée","Académie","Ecole","Colloque"],
 	  "reponse": "Académie"
@@ -641,7 +604,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez le fait de conduire",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -654,7 +617,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez Charlie Chaplin",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -667,7 +630,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez le fait de chercher ses clés",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -680,7 +643,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez l'expression \"poser un lapin\"",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -693,7 +656,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez Michael Jackson",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -706,7 +669,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez un président de la république",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -719,7 +682,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez l'expression \"Avoir les yeux plus gros que le ventre\"",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""
@@ -732,7 +695,7 @@
 	  "categorie": "Mime",
 	  "Univers": "Temps moderne",
 	  "Enonce": "Mimez Dracula",
-	  "images": [],
+	  "images": "",
 	  "Media" : "",
 	  "propositions": [],
 	  "reponse": ""

@@ -11,7 +11,7 @@ public class Enigme implements Comparable<Enigme>{
     private String categorie;
     private String univers;
     private String enonce;
-    private ArrayList<String> images;
+    private String image;
     private String media;
     private ArrayList<String> propositions;
     private String reponse;
@@ -35,10 +35,7 @@ public class Enigme implements Comparable<Enigme>{
         categorie = o.getString("categorie");
         univers = o.getString("Univers");
         enonce = o.getString("Enonce");
-        images = new ArrayList<>();
-        o.getJSONArray("images").forEach(i -> 
-            images.add((String) i)
-        ); 
+        image = o.getString("images");
         media = o.getString("Media");
         propositions = new ArrayList<>();
         o.getJSONArray("propositions").forEach(i -> 
@@ -64,8 +61,8 @@ public class Enigme implements Comparable<Enigme>{
         return enonce;
     }
 
-    public ArrayList<String> getImages() {
-        return images;
+    public String getImage() {
+        return image;
     }
 
     public String getMedia() {

@@ -31,19 +31,7 @@ public class Enigme2Controller {
 	public Label eEnonce;
 
 	@FXML
-	public ImageView eImage1;
-
-	@FXML
-	public ImageView eImage2;
-
-	@FXML
-	public ImageView eImage3;
-
-	@FXML
-	public ImageView eImage4;
-
-	@FXML
-	public ImageView eImage5;
+	public ImageView eImage;
 
 	@FXML
 	public MediaView eMedia;
@@ -78,23 +66,12 @@ public class Enigme2Controller {
 		
 		eUnivers.setText(enigme.getUnivers());
 		eEnonce.setText(enigme.getEnonce());
-		ArrayList<ImageView> images = new ArrayList<>();
-		images.add(eImage1);
-		images.add(eImage2);
-		images.add(eImage3);
-		images.add(eImage4);
-		images.add(eImage5);
-		if (!enigme.getImages().isEmpty()) {
-			for (int i = 0; i < enigme.getImages().size(); i++) {
-				ImageView image = images.get(i);
-				Image img = new Image(getClass().getResourceAsStream("/" + enigme.getImages().get(i)));
-				image.setImage(img);
-			}
-
+		if(enigme.getImage() != null) {
+			Image img = new Image(getClass().getResourceAsStream("/"+enigme.getImage()));
+			eImage.setImage(img);
+				
 		} else {
-			images.forEach(i -> {
-				i.setVisible(false);
-			});
+			eImage.setVisible(false);
 		}
 
 		if (enigme.getMedia().length() != 0) {
@@ -235,6 +212,7 @@ public class Enigme2Controller {
 
 	@FXML
 	protected void initialize() {
+		Collections.sort(Jeu.getEnigmes());
 		String univers = Jeu.getUnivers().remove(0);
 
 		ArrayList<Enigme> enigme_univers = new ArrayList<>();
@@ -245,7 +223,7 @@ public class Enigme2Controller {
 			}
 		}
 
-		Collections.shuffle(enigme_univers);
+		//Collections.shuffle(enigme_univers);
 		Enigme enigmeCourante = enigme_univers.get(0);
 
 		displayEnigme(enigmeCourante);

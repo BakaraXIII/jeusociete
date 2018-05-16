@@ -33,6 +33,9 @@ public class MenuUniversController {
 
 	@FXML
 	public Button btn5;
+	
+	@FXML
+	public Label eNbItems;
 
 	@FXML
 	public Label eNbEssais;
@@ -109,6 +112,7 @@ public class MenuUniversController {
 		ArrayList<String> univers = Jeu.getUnivers();
 		affectationUnivers(univers);
 		eNbEssais.setText(Integer.toString(Jeu.getnbEssais()));
+		eNbItems.setText(Integer.toString(Jeu.getNbItem()));
 	}
 
 }

@@ -19,7 +19,7 @@ public class Transition {
 
 	public void suivant(ActionEvent e) {
 		
-		//eTransition.getMediaPlayer().stop();
+		eTransition.getMediaPlayer().stop();
 		Jeu.setNbEssais(0);
 		Collections.shuffle(Jeu.getUnivers());
 		Node bouton = (Node) e.getSource();

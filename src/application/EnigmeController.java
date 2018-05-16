@@ -38,19 +38,7 @@ public class EnigmeController {
 	public Label eEnonce;
 	
 	@FXML
-	public ImageView eImage1;
-	
-	@FXML
-	public ImageView eImage2;
-	
-	@FXML
-	public ImageView eImage3;
-	
-	@FXML
-	public ImageView eImage4;
-	
-	@FXML
-	public ImageView eImage5;
+	public ImageView eImage;
 	
 	@FXML
 	public MediaView eMedia;
@@ -92,23 +80,12 @@ public class EnigmeController {
 	    
 		eUnivers.setText(enigme.getUnivers());	
 		eEnonce.setText(enigme.getEnonce());
-		ArrayList<ImageView> images = new ArrayList<>();
-		images.add(eImage1);
-		images.add(eImage2);
-		images.add(eImage3);
-		images.add(eImage4);
-		images.add(eImage5);
-		if(!enigme.getImages().isEmpty()) {
-			for (int i = 0; i < enigme.getImages().size(); i++) {
-				ImageView image = images.get(i);
-				Image img = new Image(getClass().getResourceAsStream("/"+enigme.getImages().get(i)));
-				image.setImage(img);
-			}	
+		if(enigme.getImage() != null) {
+			Image img = new Image(getClass().getResourceAsStream("/"+enigme.getImage()));
+			eImage.setImage(img);
 				
 		} else {
-			images.forEach(i -> {
-				i.setVisible(false);
-			});
+			eImage.setVisible(false);
 		}
 		
 		if(enigme.getMedia().length() != 0) {
@@ -118,7 +95,7 @@ public class EnigmeController {
 			eMedia.setMediaPlayer(mp);
 		}
 		
-		if(enigme.getImages().isEmpty() && enigme.getMedia().length() == 0) {
+		if(enigme.getImage() == null && enigme.getMedia().length() == 0) {
 			eGrid.getRowConstraints().get(2).setMaxHeight(0);
 		}
 		
@@ -224,7 +201,7 @@ public class EnigmeController {
 	
 	public void trouve(ActionEvent e) {
 		Jeu.setNbItem(Jeu.getNbItem()-1);
-		//generationEvenement();
+		generationEvenement();
 		retour(e);
 	}
 	
@@ -252,11 +229,13 @@ public class EnigmeController {
             }else if(Jeu.getNbItem() == 0){
             	FXMLLoader loader = new FXMLLoader(getClass().getResource("/Transition.fxml"));
 	            root = loader.load();
-	            //MenuUniversController controller = loader.<MenuUniversController>getController(); //Recup�re controller fenetre suivante
+	           Transition controller = loader.<Transition>getController(); //Recup�re controller fenetre suivante
 	            
 	            Media m = new Media(getClass().getResource("/multimedia/transition.mp3").toString());
 	    		MediaPlayer mp = new MediaPlayer(m);
 	    		mp.setAutoPlay(true);
+	    		
+	    		controller.eTransition.setMediaPlayer(mp);
 	            
 	            Scene scene = new Scene(root);
 	            

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuUniversController">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuUniversController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -77,20 +77,45 @@
                   <Insets left="30.0" />
                </GridPane.margin>
             </Button>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <GridPane GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
                <children>
-                  <Label contentDisplay="CENTER" text="Essais restants : ">
-                     <font>
-                        <Font name="Poiret One" size="25.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="eNbEssais" alignment="CENTER" text="n" textFill="#bf1313">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" text="Essais restants : ">
+                           <font>
+                              <Font name="Poiret One" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="eNbEssais" alignment="CENTER" text="n" textFill="#bf1313">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label contentDisplay="CENTER" text="Nombre items restant : ">
+                           <font>
+                              <Font name="Poiret One" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="eNbItems" alignment="CENTER" text="n" textFill="#bf1313">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
                </children>
-            </HBox>
+            </GridPane>
          </children>
       </GridPane>
    </children>
