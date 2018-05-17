@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ExplicationController">
+<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ExplicationController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0" styleClass="vbox" stylesheets="@css.css">
         <columnConstraints>
@@ -32,7 +32,7 @@
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
             <Label text="Le but est de gagner plusieurs objets appartenant à différentes époques. Pour cela vous devrez résoudre une série d’énigme... " textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <opaqueInsets>
                   <Insets />
@@ -46,7 +46,7 @@
             </Label>
             <Label text="Lancez l’application et sélectionnez les pathologies présentes autour de la table ainsi que le nombre de joueur. Formez le plateau avec les cases des univers choisis. Les cases d’un même univers doivent être adjacente. Placer les objets des différents univers sur les cases." textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <opaqueInsets>
                   <Insets />
@@ -63,9 +63,9 @@
                   <Insets bottom="-20.0" />
                </GridPane.margin>
             </ImageView>
-            <Button mnemonicParsing="false" onAction="#suivant" prefHeight="73.0" prefWidth="104.0" stylesheets="@a.css" text="Suivant" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#suivant" prefHeight="73.0" prefWidth="132.0" stylesheets="@a.css" text="Suivant" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font name="Poiret One" size="18.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font></Button>
          </children>
       </GridPane>

@@ -33,7 +33,7 @@
             </Label>
             <Label text="Sélectionnez l'univers correspondant" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Poiret One" size="26.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
@@ -55,7 +55,7 @@
             </Button>
             <Button fx:id="btn4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enigme" prefHeight="130.0" prefWidth="395.0" stylesheets="@d.css" text="Année 80" textAlignment="CENTER" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                <font>
-                  <Font name="Poiret One" size="25.0" />
+                  <Font name="Poiret One" size="35.0" />
                </font>
                <GridPane.margin>
                   <Insets right="30.0" />
@@ -90,12 +90,12 @@
                      <children>
                         <Label contentDisplay="CENTER" text="Essais restants : ">
                            <font>
-                              <Font name="Poiret One" size="25.0" />
+                              <Font name="Poiret One" size="30.0" />
                            </font>
                         </Label>
                         <Label fx:id="eNbEssais" alignment="CENTER" text="n" textFill="#bf1313">
                            <font>
-                              <Font size="24.0" />
+                              <Font size="30.0" />
                            </font>
                         </Label>
                      </children>
@@ -104,12 +104,12 @@
                      <children>
                         <Label contentDisplay="CENTER" text="Nombre items restant : ">
                            <font>
-                              <Font name="Poiret One" size="25.0" />
+                              <Font name="Poiret One" size="30.0" />
                            </font>
                         </Label>
                         <Label fx:id="eNbItems" alignment="CENTER" text="n" textFill="#bf1313">
                            <font>
-                              <Font size="24.0" />
+                              <Font size="30.0" />
                            </font>
                         </Label>
                      </children>

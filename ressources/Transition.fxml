@@ -28,12 +28,12 @@
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Label text="Alors que vous pensiez avoir fini, maintenant que vous avez récolté les différents objets, vous les amenez au “Collectionneur”. “Vous croyez vraiment que cela va suffir ? J’ai dit que je collectionnais les mondes et en particulier ceux des faibles et de ceux qui font des erreurs. Vous pensez avoir prouvé votre valeur en me ramenant ces objets et en évitant les obstacles, mais avant de vous rendre votre liberté vous allez répondre à mes questions. Si et seulement si vous y arrivez alors je considérerai que vous pouvez continuer à vivre, sinon vous compléterez ma collection. “" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Vous allez donner les objets récoltés au « Collectionneur ». « Vous pensez en avoir vraiment fini ?Vous croyez vraiment que cela va suffire ? J’ai dit précédemment que je collectionnais les mondes et en particulier ceux des faibles et de ceux qui font des erreurs. Vous pensez avoir prouvé votre valeur en me rapportant ces objets et en évitant les obstacles ?Avant de vous rendre votre liberté vous allez répondre à mes questions. Si et seulement si vous trouvez les réponses, alors je considérerai que vous pouvez continuer à vivre, sinon vous aurez perdu. “" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Poiret One" size="25.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <padding>
-                  <Insets bottom="150.0" left="20.0" right="20.0" />
+                  <Insets bottom="200.0" left="20.0" right="20.0" />
                </padding>
             </Label>
             <Button mnemonicParsing="false" onAction="#suivant" stylesheets="@b.css" text="OK" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">

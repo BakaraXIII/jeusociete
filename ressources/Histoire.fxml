@@ -10,7 +10,7 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HistoireController">
+<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HistoireController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0" styleClass="vbox" stylesheets="@css.css">
         <columnConstraints>
@@ -28,9 +28,9 @@
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Button mnemonicParsing="false" onAction="#retour" prefHeight="78.0" prefWidth="103.0" stylesheets="@a.css" text="Retour" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#retour" prefHeight="78.0" prefWidth="118.0" stylesheets="@a.css" text="Retour" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font name="Poiret One" size="18.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font></Button>
             <MediaView fx:id="eIntro" fitHeight="480.0" fitWidth="720.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
          </children>

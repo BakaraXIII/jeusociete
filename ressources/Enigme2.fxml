@@ -38,7 +38,7 @@
             </Label>
             <Label fx:id="eEnonce" alignment="TOP_CENTER" prefHeight="287.0" prefWidth="749.0" text="Faite deviner par le dessin le mot &quot;gourdin&quot; " textFill="#545050" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="25.0" />
                </font>
             </Label>
             <Button fx:id="eTrouve" mnemonicParsing="false" onAction="#suivant" prefHeight="120.0" prefWidth="256.0" stylesheets="@d.css" text="Trouvé" textFill="#54bc4b" GridPane.halignment="CENTER" GridPane.rowIndex="4">
@@ -121,17 +121,17 @@
                   <Bloom threshold="0.18" />
                </effect>
             </Label>
-            <Button fx:id="eSuivant" mnemonicParsing="false" onAction="#suivant" prefHeight="100.0" prefWidth="119.0" stylesheets="@a.css" text="Suivant" GridPane.rowIndex="4">
+            <Button fx:id="eSuivant" mnemonicParsing="false" onAction="#suivant" prefHeight="100.0" prefWidth="135.0" stylesheets="@a.css" text="Suivant" wrapText="true" GridPane.rowIndex="4">
                <font>
-                  <Font name="Poiret One" size="20.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font>
                <GridPane.margin>
                   <Insets left="40.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="eAbandon" mnemonicParsing="false" onAction="#abandon" prefHeight="100.0" prefWidth="119.0" stylesheets="@b.css" text="Abandon" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+            <Button fx:id="eAbandon" mnemonicParsing="false" onAction="#abandon" prefHeight="100.0" prefWidth="164.0" stylesheets="@b.css" text="Abandon" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                <font>
-                  <Font name="Poiret One" size="20.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font>
                <GridPane.margin>
                   <Insets right="40.0" />

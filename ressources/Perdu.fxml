@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -36,6 +36,9 @@
                <effect>
                   <Bloom threshold="0.18" />
                </effect>
+               <padding>
+                  <Insets bottom="500.0" />
+               </padding>
             </Label>
             <ImageView fitHeight="230.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                <image>
@@ -45,6 +48,20 @@
                   <Insets left="-40.0" top="375.0" />
                </GridPane.margin>
             </ImageView>
+            <Label text="Vous aviez pensé vraiment que vous alliez réussir ? Vous êtes comme tous les autres. Vous vous amusez à jouer avec des règles qui vous dépassent… Désormais votre monde m’appartient. Vous survivrez bien sûr mais désormais vous êtes tout à moi, entièrement à moi. Tout à coup ,le monde s’arrête de trembler et le ciel se transforme en nuit étoilée . Cela aurait pu vous satisfaire, mais les étoiles représentent le visage du « Collectionneur »Vous venez de comprendre que vous avez échoué, que votre liberté est à jamais perdue…" textAlignment="JUSTIFY" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Poiret One" size="28.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="80.0" left="20.0" right="20.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="80.0" left="20.0" right="20.0" />
+               </GridPane.margin>
+            </Label>
          </children>
       </GridPane>
    </children>

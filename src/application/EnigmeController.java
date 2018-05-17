@@ -176,7 +176,7 @@ public class EnigmeController {
                 
                 Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
                 
-                theStage.setTitle("FXML Welcome");
+                theStage.setTitle("Jeu");
                 theStage.setScene(scene);
                 theStage.show();          
         	}else {
@@ -188,7 +188,7 @@ public class EnigmeController {
 	            
 	            Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
 	            
-	            theStage.setTitle("FXML Welcome");
+	            theStage.setTitle("Jeu");
 	            theStage.setScene(scene);
 	            theStage.show();
             }

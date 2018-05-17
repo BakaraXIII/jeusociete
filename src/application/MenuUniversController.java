@@ -70,7 +70,7 @@ public class MenuUniversController {
 
 			Scene scene = new Scene(root);
 
-			theStage.setTitle("FXML Welcome");
+			theStage.setTitle("Jeu");
 			theStage.setScene(scene);
 			theStage.show();
 		} catch (IOException e1) {

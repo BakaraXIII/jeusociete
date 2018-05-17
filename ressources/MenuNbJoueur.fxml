@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuNbJoueurController">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuNbJoueurController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -33,7 +33,7 @@
             </Label>
             <Label text="Sélectionnez le nombre de participants" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Poiret One" size="26.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font>
                <GridPane.margin>
                   <Insets left="300.0" />

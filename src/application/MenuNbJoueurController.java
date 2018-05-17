@@ -24,7 +24,7 @@ public class MenuNbJoueurController {
 			root = FXMLLoader.load(getClass().getResource("/MenuPath.fxml"));
 			Scene scene = new Scene(root);
 		    
-	        theStage.setTitle("FXML Welcome");
+	        theStage.setTitle("Jeu");
 	        theStage.setScene(scene);
 	        theStage.show();
 		} catch (IOException e1) {
@@ -56,7 +56,7 @@ public class MenuNbJoueurController {
             
 			Scene scene = new Scene(root);
 		    
-	        theStage.setTitle("FXML Welcome");
+	        theStage.setTitle("Jeu");
 	        theStage.setScene(scene);
 	        theStage.show();
 		} catch (IOException e1) {

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0" styleClass="vbox" stylesheets="@css.css">
         <columnConstraints>
@@ -29,16 +29,19 @@
                </font>
             </Label>
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
-            <Label text="“Hmm… Je n’ai qu’une parole, je vais donc vous permettre de résoudre vos problèmes, mais je vous préviens la prochaine fois, il n’y aura pas de jeu, et vous serez directement dans ma collection. Et il y aura une prochaine fois… Faites moi confiance.”" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Bien, Je n’ai qu’une parole, je vais donc vous permettre de résoudre vos problèmes, mais je vous préviens la prochaine fois, il n’y aura pas de jeux, et vous ferez partie directement de ma collection. Et il y aura une prochaine fois … Faites-moi confiance.”" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font>
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <padding>
-                  <Insets left="20.0" right="20.0" />
+                  <Insets bottom="150.0" left="20.0" right="20.0" />
                </padding>
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
             </Label>
             <Label text="Gagné" textFill="#2eb52e" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <padding>

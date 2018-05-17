@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ExplicationController2">
+<VBox prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ExplicationController2">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0" styleClass="vbox" stylesheets="@css.css">
         <columnConstraints>
@@ -30,7 +30,7 @@
             <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
             <Label text="Prenez un jeton et mettez-le sur une case vortex de l’univers de votre choix.  Pendant un tour vous pouvez soit :" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <opaqueInsets>
                   <Insets />
@@ -44,7 +44,7 @@
             </Label>
             <Label prefHeight="116.0" prefWidth="1000.0" text="•Résoudre une énigme" textAlignment="JUSTIFY" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <opaqueInsets>
                   <Insets />
@@ -53,13 +53,13 @@
                   <Insets bottom="150.0" left="20.0" right="20.0" />
                </padding>
             </Label>
-            <Button mnemonicParsing="false" onAction="#retour" prefHeight="71.0" prefWidth="105.0" stylesheets="@a.css" text="Retour" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#retour" prefHeight="71.0" prefWidth="122.0" stylesheets="@a.css" text="Retour" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font name="Poiret One" size="18.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font></Button>
             <Label prefHeight="116.0" prefWidth="1000.0" text="•Vous déplacez dans l’univers " textAlignment="JUSTIFY" wrapText="true" GridPane.rowIndex="1">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <opaqueInsets>
                   <Insets />
@@ -70,7 +70,7 @@
             </Label>
             <Label prefHeight="116.0" prefWidth="1000.0" text="•Prendre le vortex pour changer d’époque" textAlignment="JUSTIFY" wrapText="true" GridPane.rowIndex="1">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <opaqueInsets>
                   <Insets />
@@ -81,7 +81,7 @@
             </Label>
             <Label text="Pour résoudre une énigme d’un univers, cliquez sur l’univers correspondant et résolvez l’énigme. " textAlignment="JUSTIFY" wrapText="true" GridPane.rowIndex="1">
                <font>
-                  <Font name="Poiret One" size="24.0" />
+                  <Font name="Poiret One" size="28.0" />
                </font>
                <opaqueInsets>
                   <Insets />

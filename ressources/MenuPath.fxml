@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuPathController">
+<VBox prefHeight="750.0" prefWidth="1000.0" styleClass="vbox" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuPathController">
    <children>
       <GridPane prefHeight="781.0" prefWidth="771.0">
         <columnConstraints>
@@ -33,7 +33,7 @@
             </Label>
             <Label text="Sélectionnez, si nécessaire, les types de pathologies" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Poiret One" size="26.0" />
+                  <Font name="Poiret One" size="30.0" />
                </font>
             </Label>
             <Button mnemonicParsing="false" onAction="#valider" stylesheets="@a.css" text="Valider" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER">

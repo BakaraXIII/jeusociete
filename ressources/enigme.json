@@ -590,11 +590,66 @@
 	  "typePatho": [],
 	  "categorie": "Charade",
 	  "Univers": "Siecle des lumieres",
-	  "Enonce": "Mon premier est la première lettre de l'alphabet\nMon deuxième est l'abréviation de kilo\nMon troisième est un objet que l'on lance dans un jeu de société\nMon quatrième est la partie molle du pain\nMon tout est un rassemblement de savant",
+	  "Enonce": "Mon premier est la première lettre de l'alphabet\nMon deuxième est l'abréviation de kilo\nMon troisième est un objet que l'on lance dans un jeu de société\nMon quatrième est la partie molle du pain\nMon tout est un rassemblement de savant.",
 	  "images": "",
 	  "Media" : "",
 	  "propositions": ["Assemblée","Académie","Ecole","Colloque"],
 	  "reponse": "Académie"
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Charade",
+	  "Univers": "Siecle des lumieres",
+	  "Enonce": "On met la confiture dans mon premier\nQuand on fait mon deuxième, on ne compte pas\nEt mon tout est un texte.",
+	  "images": "",
+	  "Media" : "",
+	  "propositions": ["conte","hymne","lyrique","poésie"],
+	  "reponse": "poésie"
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Charade",
+	  "Univers": "Siecle des lumieres",
+	  "Enonce": "Mon premier peut se faire au milieu en se coiffant\nMon deuxième est un adjectif possessif\nLorsqu'il est petit, mon troisième se croque au goûter\nMon quatrième désigne l'extrémité souple d'une canne à pêche\nEt mon tout est un renversement brusque d’un régime politique par la force.",
+	  "images": "",
+	  "Media" : "",
+	  "propositions": ["transformation","évolution","mutation","révolution"],
+	  "reponse": "révolution"
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Charade",
+	  "Univers": "Siecle des lumieres",
+	  "Enonce": "Lorsqu'il est petit, mon premier se croque au goûter\nMon deuxième est une note de musique\nOn respire mon troisième\nEt mon tout combat l'obscurité",
+	  "images": "",
+	  "Media" : "",
+	  "propositions": ["lanterne","feu","lumière","électricité"],
+	  "reponse": "lumière"
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Charade",
+	  "Univers": "Siecle des lumieres",
+	  "Enonce": "Mon premier est le participe passé du verbe \"mouvoir\"\nMon deuxième est une tête de Zidane...\nLe chien remue mon troisième pour exprimer sa joie\nEt mon tout est un art et une activité culturelle",
+	  "images": "",
+	  "Media" : "",
+	  "propositions": ["musique","concert","oeuvre","chant"],
+	  "reponse": "musique"
+	},
+	
+	{
+	  "typePatho": [],
+	  "categorie": "Charade",
+	  "Univers": "Siecle des lumieres",
+	  "Enonce": "Mon premier a souvent une serrure\nMon deuxième est un poisson\nEt mon tout est une œuvre d'art picturale",
+	  "images": "",
+	  "Media" : "",
+	  "propositions": ["peinture","portrait","portfolio","photo"],
+	  "reponse": "portrait"
 	},
 	
 	{

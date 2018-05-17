@@ -124,7 +124,7 @@ public class Enigme2Controller {
 
 			Stage theStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
 
-			theStage.setTitle("FXML Welcome");
+			theStage.setTitle("Jeu");
 			theStage.setScene(scene);
 			theStage.show();
 
@@ -179,7 +179,7 @@ public class Enigme2Controller {
 				
 				Scene scene = new Scene(root);
 
-				theStage.setTitle("FXML Welcome");
+				theStage.setTitle("Jeu");
 				theStage.setScene(scene);
 				theStage.show();
 			}else if(Jeu.getnbEssais() < 0){
@@ -191,7 +191,7 @@ public class Enigme2Controller {
 				
 				Scene scene = new Scene(root);
 
-				theStage.setTitle("FXML Welcome");
+				theStage.setTitle("Jeu");
 				theStage.setScene(scene);
 				theStage.show();
 			
@@ -199,7 +199,7 @@ public class Enigme2Controller {
 				root = FXMLLoader.load(getClass().getResource("/Enigme2.fxml"));
 				Scene scene = new Scene(root);
 
-				theStage.setTitle("FXML Welcome");
+				theStage.setTitle("Jeu");
 				theStage.setScene(scene);
 				theStage.show();
 			}

@@ -32,11 +32,10 @@ public class Main extends Application {
 	        Scene scene = new Scene(root);
 	        
 	        scene.getStylesheets().add(getClass().getResource("/application.css").toExternalForm());
-	    
 	        stage.setTitle("Jeu");
 	        stage.setScene(scene);
 	        stage.show();
-	        
+	        stage.setResizable(false);
 	        
 	        JSONArray a = new JSONArray(getData("/enigme.json"));
 	        Jeu.setEnigmes(a);
